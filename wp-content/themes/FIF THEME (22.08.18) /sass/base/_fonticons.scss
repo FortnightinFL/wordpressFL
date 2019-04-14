@@ -1,0 +1,127 @@
+/**
+ * @package fif.
+ **/
+
+/*
+	Font Icon
+	------------------------------------------------
+*/
+
+@font-face {
+  font-family: 'fif-icon';
+  src:  url('../fonts/fif-icon.eot?qvew1h');
+  src:  url('../fonts/fif-icon.eot?qvew1h#iefix') format('embedded-opentype'),
+    url('../fonts/fif-icon.ttf?qvew1h') format('truetype'),
+    url('../fonts/fif-icon.woff?qvew1h') format('woff'),
+    url('../fonts/fif-icon.svg?qvew1h#fif-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fif-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fif-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fiflogo:before { content: "\e918"; }
+.fifvideo:before { content: "\e900"; color: #fff; }
+.fiftag:before { content: "\e901"; color: #929292; }
+.fifshare:before { content: "\e902"; color: #fff; }
+.fifsearch:before { content: "\e903"; color: #bcbcbc; }
+.fifpics:before { content: "\e904"; color: #fff; }
+.fifpencil:before { content: "\e905"; }
+.fifmenu:before { content: "\e906"; }
+.fifloading:before { content: "\e907"; color: #ccc; }
+.fiflink:before { content: "\e908"; color: #fff; }
+.fifcomment:before { content: "\e909"; color: #fff; }
+.fifclose:before { content: "\e90a"; }
+.fifchevron-right:before { content: "\e90b"; }
+.fifchevron-left:before { content: "\e90c"; }
+.fifaudio:before { content: "\e90d"; }
+.fifhome:before { content: "\e90e"; }
+.fifnewspaper:before { content: "\e90f"; }
+.fifpencil2:before { content: "\e910"; }
+.fifquill:before { content: "\e911"; }
+.fifdroplet:before { content: "\e912"; }
+.fifimage:before { content: "\e913"; }
+.fifimages:before { content: "\e914"; }
+.fifcamera:before { content: "\e915"; }
+.fifmusic:before { content: "\e916"; }
+.fifplay:before { content: "\e917"; }
+.fifconnection:before { content: "\e91b"; }
+.fifpodcast:before { content: "\e91c"; }
+.fifmic:before { content: "\e91e"; }
+.fifbook:before { content: "\e91f"; }
+.fiffile-text:before { content: "\e922"; }
+.fifprofile:before { content: "\e923"; }
+.fiffolder-open:before { content: "\e930"; }
+.fiffolder-download:before { content: "\e933"; }
+.fiffolder-upload:before { content: "\e934"; }
+.fifbarcode:before { content: "\e937"; }
+.fifpushpin:before { content: "\e946"; }
+.fiflocation:before { content: "\e947"; }
+.fifdisplay:before { content: "\e956"; }
+.fiffloppy-disk:before { content: "\e962"; }
+.fifbubble:before { content: "\e96b"; }
+.fifspinner9:before { content: "\e982"; }
+.fifequalizer2:before { content: "\e993"; }
+.fifbug:before { content: "\e999"; }
+.fiffire:before { content: "\e9a9"; }
+.fifpower:before { content: "\e9b5"; }
+.fifswitch:before { content: "\e9b6"; }
+.fifdownload3:before { content: "\e9c7"; }
+.fifupload3:before { content: "\e9c8"; }
+.fifearth:before { content: "\e9ca"; }
+.fiflink2:before { content: "\e9cb"; }
+.fifsmile:before { content: "\e9e1"; }
+.fiftongue:before { content: "\e9e3"; }
+.fifgrin:before { content: "\e9e9"; }
+.fifcool:before { content: "\e9eb"; }
+.fifevil:before { content: "\e9ef"; }
+.fifhipster:before { content: "\e9f9"; }
+.fifwondering:before { content: "\e9fb"; }
+.fifpoint-right:before { content: "\ea04"; }
+.fifpoint-left:before { content: "\ea06"; }
+.fifcross:before { content: "\ea0f"; }
+.fifplay2:before { content: "\ea15"; }
+.fifpause:before { content: "\ea16"; }
+.fifstop:before { content: "\ea17"; }
+.fifprevious:before { content: "\ea18"; }
+.fifnext:before { content: "\ea19"; }
+.fifbackward:before { content: "\ea1a"; }
+.fifforward2:before { content: "\ea1b"; }
+.fifmail4:before { content: "\ea86"; }
+.fifgoogle-plus2:before { content: "\ea8c"; }
+.fifgoogle-drive:before { content: "\ea8f"; }
+.fiffacebook2:before { content: "\ea91"; }
+.fifinstagram:before { content: "\ea92"; }
+.fifwhatsapp:before { content: "\ea93"; }
+.fifspotify:before { content: "\ea94"; }
+.fiftelegram:before { content: "\ea95"; }
+.fiftwitter:before { content: "\ea96"; }
+.fifyoutube:before { content: "\ea9d"; }
+.fifyoutube2:before { content: "\ea9e"; }
+.fifvimeo2:before { content: "\eaa1"; }
+.fifdropbox:before { content: "\eaae"; }
+.fifnpm:before { content: "\eab1"; }
+.fifwordpress:before { content: "\eab4"; }
+.fifappleinc:before { content: "\eabe"; }
+.fifsoundcloud2:before { content: "\eac4"; }
+.fifskype:before { content: "\eac5"; }
+.fiflinkedin:before { content: "\eac9"; }
+.fifpaypal:before { content: "\ead8"; }
+.fifchrome:before { content: "\ead9"; }
+.fiffirefox:before { content: "\eada"; }
+.fifIE:before { content: "\eadb"; }
+.fifsafari:before { content: "\eadd"; }
+.fifopera:before { content: "\eade"; }

@@ -1,0 +1,475 @@
+/**
+ * @package fif.
+ **/
+
+ /*--------------------------------------------------------------
+ >>> TABLE OF CONTENTS:
+ ----------------------------------------------------------------
+1) IMPORT
+
+ --------------------------------------------------------------*/
+
+ /*==============================================
+                 1)  IMPORT
+ ==============================================*/
+
+ @import 'base/variables';		//variables
+ @import 'base/mixins';			//mixins
+ @import 'base/placeholders';	//placeholders
+ @import 'base/fonticons';		//font icons
+ @import 'base/wordpress';		//Wordpress Default
+ @import 'admin/sidebar'; //admin classes
+
+
+ /*==============================================
+                     Header
+ ==============================================*/
+
+ #masthead {
+   margin-bottom: -68px;
+   background-color: transparent;
+   border-bottom-color: transparent;
+ }
+
+.site-header {
+       padding: 0 !important;
+}
+
+ /*==============================================
+               FIF Nav Onepage
+ ==============================================*/
+
+ .storefront-primary-navigation {
+   background-color: transparent;
+
+ }
+
+ .primary-navigation {
+    display: block;
+    padding-top: 6px;
+}//.primary-navigation
+
+ button.menu-toggle {
+    margin-top: 15px;
+    background-color: transparent !important;
+ }
+
+ .main-navigation ul li a {
+
+     padding-top: 3em 0;
+     display: block;
+     text-decoration: none;
+     font-family: Satellite;
+     font-size: 11px;
+     letter-spacing: 0.2em;
+     color: #F1F5D8 !important;
+     text-transform: uppercase;
+     border-bottom: 1px solid transparent;
+     transition: border-bottom 0.2s;
+  }
+
+ .main-navigation ul li a:hover {
+     border-bottom: 1px solid #000000;
+ }
+
+.main-navigation ul.menu ul.sub-menu {
+   background-color: rgba(240,240,240,0.5) !important;
+ }
+
+ @media only screen and (max-width: 974px) {
+
+ 	button.menu-toggle {         // Hide the button
+ 		display: none;
+ 	}
+
+ 	.primary-navigation {        // Show the primary navigation
+ 		display: block;
+ 	}
+
+ 	.nav-menu {                  // Show the primary navigation part 2
+ 		overflow: visible;
+ 	}
+
+ 	.nav-menu li {                // Styling of elements in menu
+ 		display: inline-block;
+ 		padding-right: 20px;
+ 	}
+ }
+
+ /*==============================================
+               Onepage Custom Styles
+ ==============================================*/
+
+ .article-has-backgroundThumb {
+   z-index: 0;
+   position: relative;
+ }
+
+ .backgroundThumb {
+   background-position:center;
+   background-repeat:no-repeat;
+   background-size:cover;
+   position:absolute;
+   top:0;right:0;bottom:0;left:0;
+   z-index:-10;
+ }
+
+.article-onepage {
+    min-height: 816px;
+}
+
+.onepage-content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.entry-header-onepage h1 {
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 15px;
+  font-family: Satellite;
+  letter-spacing: 4px;
+}
+
+#primary.content-area{
+  margin-bottom: -36.651px;
+}
+
+/*==============================================
+
+==============================================*/
+
+
+
+/*==============================================
+             Page ID Custom CSS
+==============================================*/
+
+/* Home Page */
+
+#post-27 {
+
+  .entry-title{
+    display: none;
+  }
+
+  .homepage-content {
+
+    @media (max-width: 1000px) {
+
+        .homepage-content{
+          left:50%;
+          top:25%;
+          position:absolute;
+        }
+
+        .fif-fif_logo_2018{
+          font-size: 250px;
+          color: #fff;
+          left:25%;
+          top:25%;
+          position:absolute;
+          width:50%;
+          height:300px;
+          text-align:center;
+          max-width:500px;
+          max-height:500px;}
+    }
+    @media (min-width: 1000px) {
+
+        .homepage-content{
+          left:50%;
+          top:25%;
+          position:absolute;
+        }
+
+        .fif-fif_logo_2018{
+          font-size: 250px;
+          color: #fff;
+          left:25%;
+          top:25%;
+          position:absolute;
+          width:50%;
+          height:300px;
+          text-align:center;
+          max-height:500px;
+        }
+    }
+
+  }
+
+}
+
+
+/* Music Page */
+
+#post-50 {
+
+  .entry-title{
+    padding: 40px;
+    color: #000;
+  }
+
+  h2.woocommerce-loop-product__title{
+    color: #fff;
+  }
+
+  .woocommerce-Price-amount.amount {
+    color: #fff;
+  }
+}
+
+/* News Page */
+
+#post-55 {
+
+  .entry-title{
+    padding: 40px;
+  }
+
+}
+
+/* Video Page */
+
+#post-62 {
+
+  .entry-title{
+    padding: 40px;
+  }
+
+}
+
+/* Gigs Page */
+
+#post-60 {
+
+  .entry-title{
+    padding: 40px;
+  }
+
+    .previous-gigs {
+      background-color: rgba(255,255,255,.3);
+      border-radius: 25px;
+
+      p {
+        padding: 20px 20px;
+        color: rgb(241, 245, 216);
+      }
+ }
+}
+
+/* Gallery Page */
+
+#post-109 {
+
+  .entry-title{
+    padding: 40px;
+  }
+
+}
+
+/* About Page */
+
+#post-64 {
+
+  .entry-title {
+    padding: 40px;
+    color: #000;
+  }
+
+  .entry-content {
+    padding-top: 10px;
+
+  }
+
+    .about-fif-bg {
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+
+      p {
+        color: rgb(241, 245, 216);
+      }
+  }
+
+}
+
+/* Contact Page */
+
+#post-48 {
+
+  .entry-title{
+    padding: 40px;
+  }
+
+}
+
+ /*==============================================
+               FIF CONTACT FORM
+ ==============================================*/
+
+ // Contact form
+.fif-contact-form {
+	padding: 40px 0;
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+
+	.form-group {
+		margin-bottom: 30px;
+		position: relative;
+
+		&:before {
+			position: absolute;
+			display: block;
+			content: '';
+
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background-color: $grey2;
+		}
+
+		.form-control-msg {
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 10px;
+		}
+
+		&.has-error {
+			&:before {
+				background-color: #a94442;
+			}
+		}
+	}
+}
+
+.fif-form-control {
+	resize: vertical;
+	border: none;
+	border-radius: 0;
+	padding: 8px 15px;
+	outline: none;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+
+	&::-webkit-input-placeholder {
+		text-transform: uppercase;
+	}
+
+	&::-moz-placeholder {
+		text-transform: uppercase;
+	}
+
+	&:-ms-placeholder {
+		text-transform: uppercase;
+	}
+
+	&:-moz-placeholder {
+		text-transform: uppercase;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		box-shadow: none;
+	}
+}
+
+.form-control-msg {
+	display: none;
+}
+
+.has-error {
+	.form-control-msg {
+		display: block;
+	}
+}
+
+.js-show-feedback {
+	display: block;
+}
+
+/*==============================================
+            Spotify-follow Icon
+==============================================*/
+
+.fif-follow-spotify {
+  position: fixed;
+  bottom: 10px;
+  margin-left: 20px;
+  z-index: 10;
+
+  @media only screen and (max-width: 768px) {
+    position: fixed;
+    bottom: 70px;
+    margin-left: 20px;
+    z-index: 10;
+    }
+ }
+
+ /*==============================================
+                  Shop Styles
+ ==============================================*/
+
+ /*==============================================
+                     Footer
+ ==============================================*/
+
+ .footer-widget-area {
+ 	border: 1px solid #000; /* For better visualization, not necessary */
+ 	float: left;
+ }
+
+ /* One column */
+ .footer-widget-area:nth-child(1):nth-last-child(1) {
+ 	float: none; /* No need for one column to float */
+ 	width: 100%; /* Not necessary, but better illustrates technique */
+} // One column
+
+ /* Two columns */
+ .footer-widget-area:nth-child(1):nth-last-child(2),
+ .footer-widget-area:nth-child(2):nth-last-child(1) {
+ 	width: 50%;
+} // Two columns
+
+ /* Three columns */
+ .footer-widget-area:nth-child(1):nth-last-child(3),
+ .footer-widget-area:nth-child(2):nth-last-child(2),
+ .footer-widget-area:nth-child(3):nth-last-child(1) {
+ 	width: 33.3333%;
+} // Three colums
+
+/* Tag Cloud */
+
+.tagcloud {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.tagcloud a {
+  border-radius: 10px;
+	display: inline-block;
+  font-family: Satellite;
+  text-transform: uppercase;
+  text-decoration: none;
+	margin: 0.125rem;
+	padding: 0.4375rem;
+	background: rgba(0, 0, 255, 0.2);
+	border: 1px solid $grey2;
+	transition: all 0.1s ease-in-out;
+}
+
+.tagcloud a:hover,
+.tagcloud a:focus {
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	transform: scale(1.1);
+  text-decoration: none;
+}
+
+ /* Footer Copyright */
+
+ /* Footer Social Media */

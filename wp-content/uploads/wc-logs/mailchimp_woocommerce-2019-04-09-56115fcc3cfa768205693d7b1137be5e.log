@@ -1,0 +1,1033 @@
+2019-04-09T14:39:28+00:00 NOTICE sync.started :: Starting Sync :: Tue, Apr 9, 2019 2:39 PM
+2019-04-09T14:39:32+00:00 DEBUG MailChimp_WooCommerce_Process_Coupons_Initial_Sync@handle :: coupons :: completing now!
+2019-04-09T14:39:32+00:00 NOTICE coupon_sync.completed :: Done with the coupon sync, queuing up products.
+2019-04-09T14:39:34+00:00 DEBUG product_sync :: #11 :: Array
+(
+    [id] => 11
+    [title] => In-Flight Entertainment (CD)
+    [handle] => in-flight-entertainment-cd
+    [url] => http://localhost:8888/FIF/product/in-flight-entertainment-cd/
+    [description] => In-flight Entertainment is the debut album from Fortnight In Florida. Fortnight In Florida crowd funded this album with the help of their loyal and generous fans. It features 12 songs recorded at the legendary Rockfield recording studios in Monmouth, Wales.
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/In-flight-Entertainment-300x266.png
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 11
+                    [title] => In-Flight Entertainment (CD)
+                    [url] => http://localhost:8888/FIF/product/in-flight-entertainment-cd/
+                    [price] => 12
+                    [inventory_quantity] => 10
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/In-flight-Entertainment-300x266.png
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:50
+)
+
+2019-04-09T14:39:34+00:00 NOTICE product_sync.success :: addStoreProduct :: #11
+2019-04-09T14:39:34+00:00 DEBUG product_sync :: #12 :: Array
+(
+    [id] => 12
+    [title] => In-flight Entertainment (Digital)
+    [handle] => in-flight-entertainment-digital
+    [url] => http://localhost:8888/FIF/product/in-flight-entertainment-digital/
+    [description] => In-flight Entertainment is the debut album from Fortnight In Florida. Fortnight In Florida crowd funded this album with the help of their loyal and generous fans. It features 12 songs recorded at the legendary Rockfield recording studios in Monmouth, Wales.
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/97ea4611-85be-46e7-baec-5885b4a908fd-300x300.jpg
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [title] => In-flight Entertainment (Digital)
+                    [url] => http://localhost:8888/FIF/product/in-flight-entertainment-digital/
+                    [price] => 9.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/97ea4611-85be-46e7-baec-5885b4a908fd-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:50
+)
+
+2019-04-09T14:39:35+00:00 NOTICE product_sync.success :: addStoreProduct :: #12
+2019-04-09T14:39:35+00:00 DEBUG product_sync :: #13 :: Array
+(
+    [id] => 13
+    [title] => Cameo (Digital)
+    [handle] => cameo-digital
+    [url] => http://localhost:8888/FIF/product/cameo-digital/
+    [description] => Cameo is a single from Fortnight In Florida. It's was recorded at AiR studios in Hampstead London. It was mastered at AiR Mastering by Ray Staff.
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/Cameo-300x300.jpg
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 13
+                    [title] => Cameo (Digital)
+                    [url] => http://localhost:8888/FIF/product/cameo-digital/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/Cameo-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-09T14:39:35+00:00 NOTICE product_sync.success :: addStoreProduct :: #13
+2019-04-09T14:39:35+00:00 DEBUG product_sync :: #14 :: Array
+(
+    [id] => 14
+    [title] => Your House (Digital)
+    [handle] => your-house-digital
+    [url] => http://localhost:8888/FIF/product/your-house-digital/
+    [description] => Your House was the first single from Fortnight In Florida. Released in 2014 it's become a fan favourite with their supporters new and old.
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/Your-House-300x300.jpg
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 14
+                    [title] => Your House (Digital)
+                    [url] => http://localhost:8888/FIF/product/your-house-digital/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/Your-House-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-09T14:39:36+00:00 NOTICE product_sync.success :: addStoreProduct :: #14
+2019-04-09T14:39:36+00:00 DEBUG product_sync :: #15 :: Array
+(
+    [id] => 15
+    [title] => Heartbreaker (Digital)
+    [handle] => heartbreaker-digital
+    [url] => http://localhost:8888/FIF/product/heartbreaker-digital/
+    [description] => Heartbreaker is a single from Fortnight In Florida.
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/Heartbreaker-300x300.jpg
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 15
+                    [title] => Heartbreaker (Digital)
+                    [url] => http://localhost:8888/FIF/product/heartbreaker-digital/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/Heartbreaker-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-09T14:39:36+00:00 NOTICE product_sync.success :: addStoreProduct :: #15
+2019-04-09T14:39:38+00:00 DEBUG MailChimp_WooCommerce_Process_Products@handle :: queuing up the next job
+2019-04-09T14:39:38+00:00 DEBUG product_sync :: #16 :: Array
+(
+    [id] => 16
+    [title] => Save Our City (Digital)
+    [handle] => save-our-city-digital
+    [url] => http://localhost:8888/FIF/product/save-our-city-digital/
+    [description] => Save Our City is the first single Fortnight In Florida recorded with producer Laurence Anslow at AiR Studios, Hampstead, London.
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/Save-Our-City-300x300.jpg
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 16
+                    [title] => Save Our City (Digital)
+                    [url] => http://localhost:8888/FIF/product/save-our-city-digital/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/Save-Our-City-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-09T14:39:38+00:00 NOTICE product_sync.success :: addStoreProduct :: #16
+2019-04-09T14:39:38+00:00 DEBUG product_sync :: #17 :: Array
+(
+    [id] => 17
+    [title] => So Long EP (CD Limited Edition)
+    [handle] => so-long-ep-cd-limited-edition
+    [url] => http://localhost:8888/FIF/product/so-long-ep-cd-limited-edition/
+    [description] => So Long is the debut EP from Fortnight In Florida. It was recorded in London at Snap! Studios in Manor House with producer Laurence Anslow.
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/Photo05-01-2018_122845-300x300.jpg
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 17
+                    [title] => So Long EP (CD Limited Edition)
+                    [url] => http://localhost:8888/FIF/product/so-long-ep-cd-limited-edition/
+                    [price] => 5
+                    [inventory_quantity] => 5
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/Photo05-01-2018_122845-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-09T14:39:39+00:00 NOTICE product_sync.success :: addStoreProduct :: #17
+2019-04-09T14:39:39+00:00 DEBUG product_sync :: #18 :: Array
+(
+    [id] => 18
+    [title] => So Long EP (Digital)
+    [handle] => so-long-ep-digital
+    [url] => http://localhost:8888/FIF/product/so-long-ep-digital/
+    [description] => So Long is the debut EP from Fortnight In Florida. It was recorded in London at Snap! Studios in Manor House with producer Laurence Anslow.
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/So-Long-EP-300x300.jpg
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 18
+                    [title] => So Long EP (Digital)
+                    [url] => http://localhost:8888/FIF/product/so-long-ep-digital/
+                    [price] => 3.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/So-Long-EP-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-09T14:39:39+00:00 NOTICE product_sync.success :: addStoreProduct :: #18
+2019-04-09T14:39:39+00:00 DEBUG product_sync :: #92 :: Array
+(
+    [id] => 92
+    [title] => Easier To Lose (Single)
+    [handle] => easier-to-lose-single
+    [url] => http://localhost:8888/FIF/product/easier-to-lose-single/
+    [description] => Easier To Lose is the first single from Fortnight In Florida's debut studio album 'In-flight Entertainment'.
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/Easier_to_lose-2-300x300.jpg
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 92
+                    [title] => Easier To Lose (Single)
+                    [url] => http://localhost:8888/FIF/product/easier-to-lose-single/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2018/08/Easier_to_lose-2-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-10 01:14:05
+)
+
+2019-04-09T14:39:40+00:00 NOTICE product_sync.success :: addStoreProduct :: #92
+2019-04-09T14:39:40+00:00 DEBUG product_sync :: #520 :: Array
+(
+    [id] => 520
+    [title] => Neon Tee (Male)
+    [handle] => neon-tee-male
+    [url] => http://localhost:8888/FIF/product/neon-tee-male/
+    [description] => Fortnight In Florida Neon logo design 2019
+
+<span class="brand">B &amp; C </span><span class="title">Basic T-shirt</span>
+<div class="text">
+
+- B&amp;C #E T-Shirt
+- Short-sleeved T-shirt
+- Round-neck collar in 1x1 rib with edgestitching
+- Bottom and sleeve hems with double topstitching
+- Necktape
+- no side seams
+- 100% pre-shrunk ring-spun cotton (Grey: 85% pre-shrunk ring-spun cotton / 15% viscose)
+- 185 g/m²"
+
+</div>
+<div class="row">Material:<strong>Cotton</strong></div>
+<div class="row">Gender:<strong>Men</strong></div>
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male_Black-300x300.jpg
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 520
+                    [title] => Neon Tee (Male)
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male_Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [1] => Array
+                (
+                    [id] => 521
+                    [title] => Neon Tee (Male) :: Color = black :: Sizes = small
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/?attribute_pa_color=black&attribute_pa_sizes=small
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male_Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [2] => Array
+                (
+                    [id] => 522
+                    [title] => Neon Tee (Male) :: Color = black :: Sizes = medium
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/?attribute_pa_color=black&attribute_pa_sizes=medium
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male_Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [3] => Array
+                (
+                    [id] => 523
+                    [title] => Neon Tee (Male) :: Color = black :: Sizes = large
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/?attribute_pa_color=black&attribute_pa_sizes=large
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male_Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [4] => Array
+                (
+                    [id] => 525
+                    [title] => Neon Tee (Male) :: Color = black :: Sizes = xl
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/?attribute_pa_color=black&attribute_pa_sizes=xl
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male_Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [5] => Array
+                (
+                    [id] => 526
+                    [title] => Neon Tee (Male) :: Color = black :: Sizes = xxl
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/?attribute_pa_color=black&attribute_pa_sizes=xxl
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male_Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [6] => Array
+                (
+                    [id] => 527
+                    [title] => Neon Tee (Male) :: Color = black :: Sizes = 3xl
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/?attribute_pa_color=black&attribute_pa_sizes=3xl
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male_Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [7] => Array
+                (
+                    [id] => 528
+                    [title] => Neon Tee (Male) :: Color = white :: Sizes = small
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/?attribute_pa_color=white&attribute_pa_sizes=small
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [8] => Array
+                (
+                    [id] => 529
+                    [title] => Neon Tee (Male) :: Color = white :: Sizes = medium
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/?attribute_pa_color=white&attribute_pa_sizes=medium
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [9] => Array
+                (
+                    [id] => 530
+                    [title] => Neon Tee (Male) :: Color = white :: Sizes = large
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/?attribute_pa_color=white&attribute_pa_sizes=large
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [10] => Array
+                (
+                    [id] => 532
+                    [title] => Neon Tee (Male) :: Color = white :: Sizes = xl
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/?attribute_pa_color=white&attribute_pa_sizes=xl
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [11] => Array
+                (
+                    [id] => 533
+                    [title] => Neon Tee (Male) :: Color = white :: Sizes = xxl
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/?attribute_pa_color=white&attribute_pa_sizes=xxl
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [12] => Array
+                (
+                    [id] => 534
+                    [title] => Neon Tee (Male) :: Color = white :: Sizes = 3xl
+                    [url] => http://localhost:8888/FIF/product/neon-tee-male/?attribute_pa_color=white&attribute_pa_sizes=3xl
+                    [price] => 23
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2019-03-11 22:25:09
+)
+
+2019-04-09T14:39:41+00:00 NOTICE product_sync.success :: addStoreProduct :: #520
+2019-04-09T14:39:42+00:00 DEBUG MailChimp_WooCommerce_Process_Products@handle :: queuing up the next job
+2019-04-09T14:39:42+00:00 DEBUG product_sync :: #535 :: Array
+(
+    [id] => 535
+    [title] => Neon Tee (Female)
+    [handle] => neon-tee-female
+    [url] => http://localhost:8888/FIF/product/neon-tee-female/
+    [description] => Fortnight In Florida Neon T-shirt Design 2019
+<div class="item">
+<p class="detailInfo">- B&amp;C #E T-Shirt
+- Round neck collar in 1x1 Rib Side Seams
+- Double-needle stitched sleeve ends and bottom hem
+- Slim-fitting
+- No side seams
+- 100% Cotton (Grey: 85% pre-shrunk ring-spun cotton / 15% viscose)
+- Grammage 185 g/sqm</p>
+
+</div>
+Material:<strong> Cotton</strong>
+
+Gender: <strong>Woman</strong>
+
+&nbsp;
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-White-300x300.jpg
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 535
+                    [title] => Neon Tee (Female)
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [1] => Array
+                (
+                    [id] => 536
+                    [title] => Neon Tee (Female) :: Color = black :: Sizes = small
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/?attribute_pa_color=black&attribute_pa_sizes=small
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [2] => Array
+                (
+                    [id] => 537
+                    [title] => Neon Tee (Female) :: Color = black :: Sizes = medium
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/?attribute_pa_color=black&attribute_pa_sizes=medium
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [3] => Array
+                (
+                    [id] => 538
+                    [title] => Neon Tee (Female) :: Color = black :: Sizes = large
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/?attribute_pa_color=black&attribute_pa_sizes=large
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [4] => Array
+                (
+                    [id] => 539
+                    [title] => Neon Tee (Female) :: Color = black :: Sizes = xl
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/?attribute_pa_color=black&attribute_pa_sizes=xl
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [5] => Array
+                (
+                    [id] => 540
+                    [title] => Neon Tee (Female) :: Color = black :: Sizes = xxl
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/?attribute_pa_color=black&attribute_pa_sizes=xxl
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [6] => Array
+                (
+                    [id] => 542
+                    [title] => Neon Tee (Female) :: Color = white :: Sizes = small
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/?attribute_pa_color=white&attribute_pa_sizes=small
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [7] => Array
+                (
+                    [id] => 543
+                    [title] => Neon Tee (Female) :: Color = white :: Sizes = medium
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/?attribute_pa_color=white&attribute_pa_sizes=medium
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [8] => Array
+                (
+                    [id] => 544
+                    [title] => Neon Tee (Female) :: Color = white :: Sizes = large
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/?attribute_pa_color=white&attribute_pa_sizes=large
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [9] => Array
+                (
+                    [id] => 545
+                    [title] => Neon Tee (Female) :: Color = white :: Sizes = xl
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/?attribute_pa_color=white&attribute_pa_sizes=xl
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [10] => Array
+                (
+                    [id] => 546
+                    [title] => Neon Tee (Female) :: Color = white :: Sizes = xxl
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/?attribute_pa_color=white&attribute_pa_sizes=xxl
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [11] => Array
+                (
+                    [id] => 548
+                    [title] => Neon Tee (Female) :: Color =  :: Sizes = 
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/
+                    [inventory_quantity] => 0
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-White-300x300.jpg
+                    [backorders] => false
+                )
+
+            [12] => Array
+                (
+                    [id] => 549
+                    [title] => Neon Tee (Female) :: Color = black :: Sizes = extra-small
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/?attribute_pa_color=black&attribute_pa_sizes=extra-small
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [13] => Array
+                (
+                    [id] => 551
+                    [title] => Neon Tee (Female) :: Color = white :: Sizes = extra-small
+                    [url] => http://localhost:8888/FIF/product/neon-tee-female/?attribute_pa_color=white&attribute_pa_sizes=extra-small
+                    [price] => 20
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Female-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2019-03-11 23:03:35
+)
+
+2019-04-09T14:39:43+00:00 NOTICE product_sync.success :: addStoreProduct :: #535
+2019-04-09T14:39:43+00:00 DEBUG product_sync :: #553 :: Array
+(
+    [id] => 553
+    [title] => 2018 Tee (Male)
+    [handle] => 2018-tee-male
+    [url] => http://localhost:8888/FIF/product/2018-tee-male/
+    [description] => Fortnight In Florida 2018 logo design.
+
+<span class="brand">B &amp; C </span><span class="title">Basic T-shirt</span>
+<div class="text">
+
+- B&amp;C #E T-Shirt
+- Short-sleeved T-shirt
+- Round-neck collar in 1x1 rib with edgestitching
+- Bottom and sleeve hems with double topstitching
+- Necktape
+- no side seams
+- 100% pre-shrunk ring-spun cotton (Grey: 85% pre-shrunk ring-spun cotton / 15% viscose)
+- 185 g/m²"
+
+</div>
+<div class="row">Material:<strong>Cotton</strong></div>
+<div class="row">Gender:<strong>Men</strong></div>
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-White-300x300.jpg
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 553
+                    [title] => 2018 Tee (Male)
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [1] => Array
+                (
+                    [id] => 554
+                    [title] => 2018 Tee (Male) :: Color = black :: Sizes = small
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/?attribute_pa_color=black&attribute_pa_sizes=small
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [2] => Array
+                (
+                    [id] => 555
+                    [title] => 2018 Tee (Male) :: Color = black :: Sizes = medium
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/?attribute_pa_color=black&attribute_pa_sizes=medium
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [3] => Array
+                (
+                    [id] => 556
+                    [title] => 2018 Tee (Male) :: Color = black :: Sizes = large
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/?attribute_pa_color=black&attribute_pa_sizes=large
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [4] => Array
+                (
+                    [id] => 557
+                    [title] => 2018 Tee (Male) :: Color = black :: Sizes = xl
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/?attribute_pa_color=black&attribute_pa_sizes=xl
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [5] => Array
+                (
+                    [id] => 558
+                    [title] => 2018 Tee (Male) :: Color = black :: Sizes = xxl
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/?attribute_pa_color=black&attribute_pa_sizes=xxl
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [6] => Array
+                (
+                    [id] => 559
+                    [title] => 2018 Tee (Male) :: Color = black :: Sizes = 3xl
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/?attribute_pa_color=black&attribute_pa_sizes=3xl
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [7] => Array
+                (
+                    [id] => 560
+                    [title] => 2018 Tee (Male) :: Color = white :: Sizes = small
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/?attribute_pa_color=white&attribute_pa_sizes=small
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [8] => Array
+                (
+                    [id] => 561
+                    [title] => 2018 Tee (Male) :: Color = white :: Sizes = medium
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/?attribute_pa_color=white&attribute_pa_sizes=medium
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [9] => Array
+                (
+                    [id] => 562
+                    [title] => 2018 Tee (Male) :: Color = white :: Sizes = large
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/?attribute_pa_color=white&attribute_pa_sizes=large
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/Male-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [10] => Array
+                (
+                    [id] => 563
+                    [title] => 2018 Tee (Male) :: Color = white :: Sizes = xl
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/?attribute_pa_color=white&attribute_pa_sizes=xl
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [11] => Array
+                (
+                    [id] => 564
+                    [title] => 2018 Tee (Male) :: Color = white :: Sizes = xxl
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/?attribute_pa_color=white&attribute_pa_sizes=xxl
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [12] => Array
+                (
+                    [id] => 565
+                    [title] => 2018 Tee (Male) :: Color = white :: Sizes = 3xl
+                    [url] => http://localhost:8888/FIF/product/2018-tee-male/?attribute_pa_color=white&attribute_pa_sizes=3xl
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Men-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2019-03-13 00:23:16
+)
+
+2019-04-09T14:39:44+00:00 NOTICE product_sync.success :: addStoreProduct :: #553
+2019-04-09T14:39:44+00:00 DEBUG product_sync :: #570 :: Array
+(
+    [id] => 570
+    [title] => 2018 Tee (Female)
+    [handle] => 2018-tee-female
+    [url] => http://localhost:8888/FIF/product/2018-tee-female/
+    [description] => Fortnight In Florida Neon T-shirt Design 2019
+<div class="item">
+<p class="detailInfo">- B&amp;C #E T-Shirt
+- Round neck collar in 1x1 Rib Side Seams
+- Double-needle stitched sleeve ends and bottom hem
+- Slim-fitting
+- No side seams
+- 100% Cotton (Grey: 85% pre-shrunk ring-spun cotton / 15% viscose)
+- Grammage 185 g/sqm</p>
+
+</div>
+Material:<strong> Cotton</strong>
+
+Gender: <strong>Woman</strong>
+
+&nbsp;
+    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-Black-300x300.jpg
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 570
+                    [title] => 2018 Tee (Female)
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [1] => Array
+                (
+                    [id] => 571
+                    [title] => 2018 Tee (Female) :: Color =  :: Sizes = 
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/
+                    [inventory_quantity] => 0
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-Black-300x300.jpg
+                    [backorders] => false
+                )
+
+            [2] => Array
+                (
+                    [id] => 572
+                    [title] => 2018 Tee (Female) :: Color = black :: Sizes = extra-small
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/?attribute_pa_color=black&attribute_pa_sizes=extra-small
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [3] => Array
+                (
+                    [id] => 573
+                    [title] => 2018 Tee (Female) :: Color = black :: Sizes = small
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/?attribute_pa_color=black&attribute_pa_sizes=small
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [4] => Array
+                (
+                    [id] => 574
+                    [title] => 2018 Tee (Female) :: Color = black :: Sizes = medium
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/?attribute_pa_color=black&attribute_pa_sizes=medium
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [5] => Array
+                (
+                    [id] => 575
+                    [title] => 2018 Tee (Female) :: Color = black :: Sizes = large
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/?attribute_pa_color=black&attribute_pa_sizes=large
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [6] => Array
+                (
+                    [id] => 576
+                    [title] => 2018 Tee (Female) :: Color = black :: Sizes = xl
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/?attribute_pa_color=black&attribute_pa_sizes=xl
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [7] => Array
+                (
+                    [id] => 577
+                    [title] => 2018 Tee (Female) :: Color = black :: Sizes = xxl
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/?attribute_pa_color=black&attribute_pa_sizes=xxl
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-Black-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [8] => Array
+                (
+                    [id] => 578
+                    [title] => 2018 Tee (Female) :: Color = white :: Sizes = extra-small
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/?attribute_pa_color=white&attribute_pa_sizes=extra-small
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [9] => Array
+                (
+                    [id] => 579
+                    [title] => 2018 Tee (Female) :: Color = white :: Sizes = small
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/?attribute_pa_color=white&attribute_pa_sizes=small
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [10] => Array
+                (
+                    [id] => 580
+                    [title] => 2018 Tee (Female) :: Color = white :: Sizes = medium
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/?attribute_pa_color=white&attribute_pa_sizes=medium
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [11] => Array
+                (
+                    [id] => 581
+                    [title] => 2018 Tee (Female) :: Color = white :: Sizes = large
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/?attribute_pa_color=white&attribute_pa_sizes=large
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [12] => Array
+                (
+                    [id] => 582
+                    [title] => 2018 Tee (Female) :: Color = white :: Sizes = xl
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/?attribute_pa_color=white&attribute_pa_sizes=xl
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+            [13] => Array
+                (
+                    [id] => 583
+                    [title] => 2018 Tee (Female) :: Color = white :: Sizes = xxl
+                    [url] => http://localhost:8888/FIF/product/2018-tee-female/?attribute_pa_color=white&attribute_pa_sizes=xxl
+                    [price] => 18.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => http://localhost:8888/FIF/wp-content/uploads/2019/03/2018-Woman-White-300x300.jpg
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2019-03-13 00:42:47
+)
+
+2019-04-09T14:39:45+00:00 NOTICE product_sync.success :: addStoreProduct :: #570
+2019-04-09T14:39:45+00:00 DEBUG MailChimp_WooCommerce_Process_Products@handle :: queuing up the next job
+2019-04-09T14:39:47+00:00 DEBUG MailChimp_WooCommerce_Process_Products@handle :: products :: completing now!
+2019-04-09T14:39:47+00:00 NOTICE product_sync.completed :: Done with the product sync :: queuing up the orders next!
+2019-04-09T14:39:50+00:00 DEBUG MailChimp_WooCommerce_Process_Orders@handle :: orders :: completing now!
+2019-04-09T14:39:50+00:00 NOTICE order_submit.completed :: Done with the order sync.
+2019-04-09T14:39:50+00:00 NOTICE sync.completed :: Finished Sync :: Tue, Apr 9, 2019 2:39 PM

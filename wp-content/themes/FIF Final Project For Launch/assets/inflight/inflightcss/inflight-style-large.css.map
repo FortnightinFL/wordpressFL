@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA;;;;EAIE;AAEF,WAAW;AAEV,6BAA8B;EAC7B,SAAS,EAAE,IAAI;;AAGjB,YAAY;AAGV,kBAAU;EACT,SAAS,EAAE,GAAG;;AAIjB,YAAY;AAEX,OAAQ;EACP,qBAAqB,EAAE,MAAM;EAC7B,OAAO,EAAE,MAAM",
+"sources": ["../inflightsass/inflight-style-large.scss"],
+"names": [],
+"file": "inflight-style-large.css"
+}

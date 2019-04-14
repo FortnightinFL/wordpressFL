@@ -1,0 +1,280 @@
+/**
+ * @package fif.
+ **/
+ /*--------------------------------------------------------------
+ >>> TABLE OF CONTENTS:
+ ----------------------------------------------------------------
+1) IMPORT
+
+ --------------------------------------------------------------*/
+/*==============================================
+                1)  IMPORT
+==============================================*/
+/**
+ * @package fif.
+ **/
+/*
+	Variables
+	------------------------------------------------
+*/
+/**
+ * @package fif.
+ **/
+/*
+	Mixins
+	------------------------------------------------
+*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-360deg); } }
+/**
+ * @package fif.
+ **/
+/*
+	Place Holder
+	------------------------------------------------
+*/
+/**
+ * @package fif.
+ **/
+ /* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.aligncenter {
+  width: 100%;
+  height: auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+img.aligncenter {
+  width: 100%;
+  height: auto; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
+h1.fif-username,
+h2.fif-description {
+  font-weight: 100;
+  color: #fff; }
+
+h1.fif-username {
+  font-size: 24px;
+  margin: 0 0 10px; }
+
+h2.fif-description {
+  font-size: 13px;
+  margin: 0 0 20px; }
+
+.fif-icon-sidebar {
+  color: white;
+  margin: 0 2px; }
+  .fif-icon-sidebar:before {
+    width: 22px;
+    height: 22px;
+    font-size: 22px; }
+
+.fif-icon-button:before {
+  margin-top: 3px;
+  margin-left: -3px; }
+
+.image-container {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-align: center; }
+
+.profile-picture {
+  width: 122px;
+  height: 122px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 20px auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*==============================================
+              Onepage Custom Styles
+==============================================*/
+.onepagelayer {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  max-width: 100%; }
+
+.article-has-backgroundThumb {
+  z-index: 0;
+  position: relative; }
+
+.backgroundThumb {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(0.6px);
+  opacity: .75;
+  z-index: -1;
+  min-height: 500px; }
+
+.article-onepage {
+  min-height: 700px; }
+
+.onepage-content {
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.entry-header-onepage h1 {
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 15px; }
+
+/*==============================================
+              FIF CONTACT FORM
+==============================================*/
+.fif-contact-form {
+  padding: 40px 0;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto; }
+  .fif-contact-form .form-group {
+    margin-bottom: 30px;
+    position: relative; }
+    .fif-contact-form .form-group:before {
+      position: absolute;
+      display: block;
+      content: '';
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #CBCBCB; }
+    .fif-contact-form .form-group .form-control-msg {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 10px; }
+    .fif-contact-form .form-group.has-error:before {
+      background-color: #a94442; }
+
+.fif-form-control {
+  resize: vertical;
+  border: none;
+  border-radius: 0;
+  padding: 8px 15px;
+  outline: none;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important; }
+  .fif-form-control::-webkit-input-placeholder {
+    text-transform: uppercase; }
+  .fif-form-control::-moz-placeholder {
+    text-transform: uppercase; }
+  .fif-form-control:-ms-placeholder {
+    text-transform: uppercase; }
+  .fif-form-control:-moz-placeholder {
+    text-transform: uppercase; }
+  .fif-form-control:hover, .fif-form-control:focus, .fif-form-control:active {
+    box-shadow: none; }
+
+.form-control-msg {
+  display: none; }
+
+.has-error .form-control-msg {
+  display: block; }
+
+.js-show-feedback {
+  display: block; }
+
+/*# sourceMappingURL=fif.css.map */

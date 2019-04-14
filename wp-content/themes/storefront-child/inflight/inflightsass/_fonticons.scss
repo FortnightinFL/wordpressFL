@@ -1,0 +1,112 @@
+/**
+ * @package fif.
+ **/
+
+/*
+	Custom Fonts
+	------------------------------------------------
+*/
+
+@font-face {
+  font-family: 'Satellite';
+  src: url('inflightfonts/Satellite.eot') format('embedded-opentype');
+  src: url('inflightfonts/Satellite.otf')  format('opentype'),
+	     url('inflightfonts/Satellite.woff') format('woff'),
+       url('inflightfonts/Satellite.ttf')  format('truetype'),
+       url('inflightfonts/Satellite.svg#Satellite') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'streamster';
+  src: url('inflightfonts/streamster.eot') format('embedded-opentype');
+  src: url('inflightfonts/streamster.woff') format('woff'),
+       url('inflightfonts/streamster.woff2') format('woff'),
+       url('inflightfonts/streamster.ttf')  format('truetype'),
+       url('inflightfonts/streamster.svg#streamster') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*
+	Font Icon
+	------------------------------------------------
+*/
+
+@font-face {
+  font-family: 'fif-icon';
+  src:  url('inflightfonts/fif-icon.eot?s3or55');
+  src:  url('inflightfonts/fif-icon.eot?s3or55#iefix') format('embedded-opentype'),
+    url('inflightfonts/fif-icon.ttf?s3or55') format('truetype'),
+    url('inflightfonts/fif-icon.woff?s3or55') format('woff'),
+    url('inflightfonts/fif-icon.svg?s3or55#fif-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.feature::before {
+      font-family: 'fif-icon';
+      font-weight: normal;
+      font-style: normal;
+}
+
+      .fif-icon {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'fif-icon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+
+        /* =========== Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .fif-fif_logo_2018:before {
+        content: "\e900";
+      }
+
+      .fif-newspaper:before {
+        content: "\e923";
+      }
+
+      .fif-pencil:before {
+        content: "\e924";
+      }
+
+      .fif-droplet:before {
+        content: "\e92a";
+      }
+
+      .fif-camera:before {
+        content: "\e92e";
+      }
+
+      .fif-headphones:before {
+        content: "\e92f";
+      }
+
+      .fif-music:before {
+        content: "\e930";
+      }
+
+      .fif-podcast:before {
+        content: "\e93b";
+      }
+
+      .fif-file-music:before {
+        content: "\e947";
+      }
+
+      .fif-file-video:before {
+        content: "\e949";
+      }
+
+      .fif-barcode:before {
+        content: "\e956";
+      }

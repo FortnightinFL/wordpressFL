@@ -1,0 +1,1367 @@
+/**
+ * @package fif.
+ **/
+ /*--------------------------------------------------------------
+ >>> TABLE OF CONTENTS:
+ ----------------------------------------------------------------
+1) IMPORT
+
+ --------------------------------------------------------------*/
+/*==============================================
+                1)  IMPORT
+==============================================*/
+/**
+ * @package fif.
+ **/
+/*
+	Variables
+	------------------------------------------------
+*/
+/**
+ * @package fif.
+ **/
+/*
+	Mixins
+	------------------------------------------------
+*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-360deg); } }
+/**
+ * @package fif.
+ **/
+/*
+	Place Holder
+	------------------------------------------------
+*/
+/**
+ * @package fif.
+ **/
+/*
+	Custom Fonts
+	------------------------------------------------
+*/
+@font-face {
+  font-family: 'Satellite';
+  src: url("fonts/Satellite.eot") format("embedded-opentype");
+  src: url("fonts/Satellite.otf") format("opentype"), url("fonts/Satellite.woff") format("woff"), url("Satellite.ttf") format("truetype"), url("Satellite.svg#Satellite") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'streamster';
+  src: url("fonts/streamster.eot") format("embedded-opentype");
+  src: url("fonts/streamster.otf") format("opentype"), url("fonts/streamster.woff") format("woff"), url("fonts/streamster.woff2") format("woff"), url("streamster.ttf") format("truetype"), url("streamster.svg#streamster") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*
+	Font Icon
+	------------------------------------------------
+*/
+@font-face {
+  font-family: 'fif-icon';
+  src: url("fonts/fif-icon.eot?s3or55");
+  src: url("fonts/fif-icon.eot?s3or55#iefix") format("embedded-opentype"), url("fonts/fif-icon.ttf?s3or55") format("truetype"), url("fonts/fif-icon.woff?s3or55") format("woff"), url("fonts/fif-icon.svg?s3or55#fif-icon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.fif-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fif-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.fif-fif_logo_2018:before {
+  content: "\e900"; }
+
+.fif-amazon1:before {
+  content: "\e901";
+  color: #f90; }
+
+.fif-americanexpress:before {
+  content: "\e902";
+  color: #2e77bc; }
+
+.fif-android1:before {
+  content: "\e903";
+  color: #a4c639; }
+
+.fif-apple:before {
+  content: "\e904";
+  color: #999; }
+
+.fif-applemusic:before {
+  content: "\e905"; }
+
+.fif-compropago:before {
+  content: "\e906";
+  color: #00aaef; }
+
+.fif-facebook1:before {
+  content: "\e907";
+  color: #3b5998; }
+
+.fif-google1:before {
+  content: "\e908";
+  color: #4285f4; }
+
+.fif-googlechrome:before {
+  content: "\e909";
+  color: #4285f4; }
+
+.fif-googledrive:before {
+  content: "\e90a";
+  color: #4386fc; }
+
+.fif-googleplus:before {
+  content: "\e90b";
+  color: #dc4e41; }
+
+.fif-hootsuite:before {
+  content: "\e90c"; }
+
+.fif-html5:before {
+  content: "\e90d";
+  color: #e34f26; }
+
+.fif-instagram1:before {
+  content: "\e90e";
+  color: #e4405f; }
+
+.fif-intel:before {
+  content: "\e90f";
+  color: #0071c5; }
+
+.fif-linkedin1:before {
+  content: "\e910";
+  color: #0077b5; }
+
+.fif-mailchimp:before {
+  content: "\e911";
+  color: #239ab9; }
+
+.fif-messenger:before {
+  content: "\e912";
+  color: #0084ff; }
+
+.fif-pandora:before {
+  content: "\e913";
+  color: #005483; }
+
+.fif-paypal1:before {
+  content: "\e914";
+  color: #00457c; }
+
+.fif-skype1:before {
+  content: "\e915";
+  color: #00aff0; }
+
+.fif-soundcloud1:before {
+  content: "\e916";
+  color: #f30; }
+
+.fif-spotify1:before {
+  content: "\e917";
+  color: #1ed760; }
+
+.fif-twitter1:before {
+  content: "\e918";
+  color: #1da1f2; }
+
+.fif-unsplash:before {
+  content: "\e919"; }
+
+.fif-vimeo1:before {
+  content: "\e91a";
+  color: #1ab7ea; }
+
+.fif-visa:before {
+  content: "\e91b";
+  color: #142787; }
+
+.fif-whatsapp1:before {
+  content: "\e91c";
+  color: #25d366; }
+
+.fif-wordpress1:before {
+  content: "\e91d";
+  color: #21759b; }
+
+.fif-youtube1:before {
+  content: "\e91e";
+  color: #f00; }
+
+.fif-home:before {
+  content: "\e91f"; }
+
+.fif-home2:before {
+  content: "\e920"; }
+
+.fif-home3:before {
+  content: "\e921"; }
+
+.fif-office:before {
+  content: "\e922"; }
+
+.fif-newspaper:before {
+  content: "\e923"; }
+
+.fif-pencil:before {
+  content: "\e924"; }
+
+.fif-pencil2:before {
+  content: "\e925"; }
+
+.fif-quill:before {
+  content: "\e926"; }
+
+.fif-pen:before {
+  content: "\e927"; }
+
+.fif-blog:before {
+  content: "\e928"; }
+
+.fif-eyedropper:before {
+  content: "\e929"; }
+
+.fif-droplet:before {
+  content: "\e92a"; }
+
+.fif-paint-format:before {
+  content: "\e92b"; }
+
+.fif-image:before {
+  content: "\e92c"; }
+
+.fif-images:before {
+  content: "\e92d"; }
+
+.fif-camera:before {
+  content: "\e92e"; }
+
+.fif-headphones:before {
+  content: "\e92f"; }
+
+.fif-music:before {
+  content: "\e930"; }
+
+.fif-play:before {
+  content: "\e931"; }
+
+.fif-film:before {
+  content: "\e932"; }
+
+.fif-video-camera:before {
+  content: "\e933"; }
+
+.fif-dice:before {
+  content: "\e934"; }
+
+.fif-pacman:before {
+  content: "\e935"; }
+
+.fif-spades:before {
+  content: "\e936"; }
+
+.fif-clubs:before {
+  content: "\e937"; }
+
+.fif-diamonds:before {
+  content: "\e938"; }
+
+.fif-bullhorn:before {
+  content: "\e939"; }
+
+.fif-connection:before {
+  content: "\e93a"; }
+
+.fif-podcast:before {
+  content: "\e93b"; }
+
+.fif-feed:before {
+  content: "\e93c"; }
+
+.fif-mic:before {
+  content: "\e93d"; }
+
+.fif-book:before {
+  content: "\e93e"; }
+
+.fif-books:before {
+  content: "\e93f"; }
+
+.fif-library:before {
+  content: "\e940"; }
+
+.fif-file-text:before {
+  content: "\e941"; }
+
+.fif-profile:before {
+  content: "\e942"; }
+
+.fif-file-empty:before {
+  content: "\e943"; }
+
+.fif-files-empty:before {
+  content: "\e944"; }
+
+.fif-file-text2:before {
+  content: "\e945"; }
+
+.fif-file-picture:before {
+  content: "\e946"; }
+
+.fif-file-music:before {
+  content: "\e947"; }
+
+.fif-file-play:before {
+  content: "\e948"; }
+
+.fif-file-video:before {
+  content: "\e949"; }
+
+.fif-file-zip:before {
+  content: "\e94a"; }
+
+.fif-copy:before {
+  content: "\e94b"; }
+
+.fif-paste:before {
+  content: "\e94c"; }
+
+.fif-stack:before {
+  content: "\e94d"; }
+
+.fif-folder:before {
+  content: "\e94e"; }
+
+.fif-folder-open:before {
+  content: "\e94f"; }
+
+.fif-folder-plus:before {
+  content: "\e950"; }
+
+.fif-folder-minus:before {
+  content: "\e951"; }
+
+.fif-folder-download:before {
+  content: "\e952"; }
+
+.fif-folder-upload:before {
+  content: "\e953"; }
+
+.fif-price-tag:before {
+  content: "\e954"; }
+
+.fif-price-tags:before {
+  content: "\e955"; }
+
+.fif-barcode:before {
+  content: "\e956"; }
+
+.fif-qrcode:before {
+  content: "\e957"; }
+
+.fif-ticket:before {
+  content: "\e958"; }
+
+.fif-cart:before {
+  content: "\e959"; }
+
+.fif-coin-dollar:before {
+  content: "\e95a"; }
+
+.fif-coin-euro:before {
+  content: "\e95b"; }
+
+.fif-coin-pound:before {
+  content: "\e95c"; }
+
+.fif-coin-yen:before {
+  content: "\e95d"; }
+
+.fif-credit-card:before {
+  content: "\e95e"; }
+
+.fif-calculator:before {
+  content: "\e95f"; }
+
+.fif-lifebuoy:before {
+  content: "\e960"; }
+
+.fif-phone:before {
+  content: "\e961"; }
+
+.fif-phone-hang-up:before {
+  content: "\e962"; }
+
+.fif-address-book:before {
+  content: "\e963"; }
+
+.fif-envelop:before {
+  content: "\e964"; }
+
+.fif-pushpin:before {
+  content: "\e965"; }
+
+.fif-location:before {
+  content: "\e966"; }
+
+.fif-location2:before {
+  content: "\e967"; }
+
+.fif-compass:before {
+  content: "\e968"; }
+
+.fif-compass2:before {
+  content: "\e969"; }
+
+.fif-map:before {
+  content: "\e96a"; }
+
+.fif-map2:before {
+  content: "\e96b"; }
+
+.fif-history:before {
+  content: "\e96c"; }
+
+.fif-clock:before {
+  content: "\e96d"; }
+
+.fif-clock2:before {
+  content: "\e96e"; }
+
+.fif-alarm:before {
+  content: "\e96f"; }
+
+.fif-bell:before {
+  content: "\e970"; }
+
+.fif-stopwatch:before {
+  content: "\e971"; }
+
+.fif-calendar:before {
+  content: "\e972"; }
+
+.fif-printer:before {
+  content: "\e973"; }
+
+.fif-keyboard:before {
+  content: "\e974"; }
+
+.fif-display:before {
+  content: "\e975"; }
+
+.fif-laptop:before {
+  content: "\e976"; }
+
+.fif-mobile:before {
+  content: "\e977"; }
+
+.fif-mobile2:before {
+  content: "\e978"; }
+
+.fif-tablet:before {
+  content: "\e979"; }
+
+.fif-tv:before {
+  content: "\e97a"; }
+
+.fif-box-add:before {
+  content: "\e97d"; }
+
+.fif-box-remove:before {
+  content: "\e97e"; }
+
+.fif-download:before {
+  content: "\e97f"; }
+
+.fif-upload:before {
+  content: "\e980"; }
+
+.fif-floppy-disk:before {
+  content: "\e981"; }
+
+.fif-drive:before {
+  content: "\e982"; }
+
+.fif-database:before {
+  content: "\e983"; }
+
+.fif-bubble2:before {
+  content: "\e98d"; }
+
+.fif-bubbles3:before {
+  content: "\e98e"; }
+
+.fif-bubbles4:before {
+  content: "\e98f"; }
+
+.fif-quotes-left:before {
+  content: "\e996"; }
+
+.fif-quotes-right:before {
+  content: "\e997"; }
+
+.fif-hour-glass:before {
+  content: "\e998"; }
+
+.fif-enlarge2:before {
+  content: "\e9aa"; }
+
+.fif-shrink2:before {
+  content: "\e9ab"; }
+
+.fif-key2:before {
+  content: "\e9ad"; }
+
+.fif-lock:before {
+  content: "\e9ae"; }
+
+.fif-unlocked:before {
+  content: "\e9af"; }
+
+.fif-wrench:before {
+  content: "\e9b0"; }
+
+.fif-equalizer:before {
+  content: "\e9b1"; }
+
+.fif-equalizer2:before {
+  content: "\e9b2"; }
+
+.fif-cog:before {
+  content: "\e9b3"; }
+
+.fif-cogs:before {
+  content: "\e9b4"; }
+
+.fif-hammer:before {
+  content: "\e9b5"; }
+
+.fif-magic-wand:before {
+  content: "\e9b6"; }
+
+.fif-aid-kit:before {
+  content: "\e9b7"; }
+
+.fif-bug:before {
+  content: "\e9b8"; }
+
+.fif-pie-chart:before {
+  content: "\e9b9"; }
+
+.fif-rocket:before {
+  content: "\e9c4"; }
+
+.fif-fire:before {
+  content: "\e9c8"; }
+
+.fif-target:before {
+  content: "\e9d2"; }
+
+.fif-cloud:before {
+  content: "\e9e0"; }
+
+.fif-cloud-download:before {
+  content: "\e9e1"; }
+
+.fif-cloud-upload:before {
+  content: "\e9e2"; }
+
+.fif-cloud-check:before {
+  content: "\e9e3"; }
+
+.fif-download3:before {
+  content: "\e9e6"; }
+
+.fif-upload3:before {
+  content: "\e9e7"; }
+
+.fif-earth:before {
+  content: "\e9e9"; }
+
+.fif-link:before {
+  content: "\e9ea"; }
+
+.fif-flag:before {
+  content: "\e9eb"; }
+
+.fif-attachment:before {
+  content: "\e9ec"; }
+
+.fif-sun:before {
+  content: "\e9f3"; }
+
+.fif-contrast:before {
+  content: "\e9f4"; }
+
+.fif-brightness-contrast:before {
+  content: "\e9f5"; }
+
+.fif-happy:before {
+  content: "\e9fe"; }
+
+.fif-warning:before {
+  content: "\ea26"; }
+
+.fif-notification:before {
+  content: "\ea27"; }
+
+.fif-question:before {
+  content: "\ea28"; }
+
+.fif-plus:before {
+  content: "\ea29"; }
+
+.fif-minus:before {
+  content: "\ea2a"; }
+
+.fif-info:before {
+  content: "\ea2b"; }
+
+.fif-cancel-circle:before {
+  content: "\ea2c"; }
+
+.fif-blocked:before {
+  content: "\ea2d"; }
+
+.fif-cross:before {
+  content: "\ea2e"; }
+
+.fif-checkmark:before {
+  content: "\ea2f"; }
+
+.fif-checkmark2:before {
+  content: "\ea30"; }
+
+.fif-spell-check:before {
+  content: "\ea31"; }
+
+.fif-play2:before {
+  content: "\ea34"; }
+
+.fif-pause:before {
+  content: "\ea35"; }
+
+.fif-stop:before {
+  content: "\ea36"; }
+
+.fif-previous:before {
+  content: "\ea37"; }
+
+.fif-next:before {
+  content: "\ea38"; }
+
+.fif-backward:before {
+  content: "\ea39"; }
+
+.fif-forward2:before {
+  content: "\ea3a"; }
+
+.fif-play3:before {
+  content: "\ea3b"; }
+
+.fif-pause2:before {
+  content: "\ea3c"; }
+
+.fif-stop2:before {
+  content: "\ea3d"; }
+
+.fif-backward2:before {
+  content: "\ea3e"; }
+
+.fif-forward3:before {
+  content: "\ea3f"; }
+
+.fif-first:before {
+  content: "\ea40"; }
+
+.fif-last:before {
+  content: "\ea41"; }
+
+.fif-previous2:before {
+  content: "\ea42"; }
+
+.fif-next2:before {
+  content: "\ea43"; }
+
+.fif-eject:before {
+  content: "\ea44"; }
+
+.fif-volume-high:before {
+  content: "\ea45"; }
+
+.fif-volume-medium:before {
+  content: "\ea46"; }
+
+.fif-volume-low:before {
+  content: "\ea47"; }
+
+.fif-volume-mute:before {
+  content: "\ea48"; }
+
+.fif-volume-mute2:before {
+  content: "\ea49"; }
+
+.fif-volume-increase:before {
+  content: "\ea4a"; }
+
+.fif-volume-decrease:before {
+  content: "\ea4b"; }
+
+.fif-loop:before {
+  content: "\ea4c"; }
+
+.fif-loop2:before {
+  content: "\ea4d"; }
+
+.fif-infinite:before {
+  content: "\ea4e"; }
+
+.fif-shuffle:before {
+  content: "\ea4f"; }
+
+.fif-arrow-up-left2:before {
+  content: "\ea58"; }
+
+.fif-arrow-up2:before {
+  content: "\ea59"; }
+
+.fif-arrow-up-right2:before {
+  content: "\ea5a"; }
+
+.fif-arrow-right2:before {
+  content: "\ea5b"; }
+
+.fif-arrow-down-right2:before {
+  content: "\ea5c"; }
+
+.fif-arrow-down2:before {
+  content: "\ea5d"; }
+
+.fif-arrow-down-left2:before {
+  content: "\ea5e"; }
+
+.fif-circle-up:before {
+  content: "\ea60"; }
+
+.fif-circle-right:before {
+  content: "\ea61"; }
+
+.fif-circle-down:before {
+  content: "\ea62"; }
+
+.fif-circle-left:before {
+  content: "\ea63"; }
+
+.fif-checkbox-checked:before {
+  content: "\ea71"; }
+
+.fif-embed2:before {
+  content: "\ea9f"; }
+
+.fif-share2:before {
+  content: "\eaa1"; }
+
+.fif-mail:before {
+  content: "\eaa2"; }
+
+.fif-mail4:before {
+  content: "\eaa5"; }
+
+.fif-amazon:before {
+  content: "\eaa6"; }
+
+.fif-google:before {
+  content: "\eaa7"; }
+
+.fif-google2:before {
+  content: "\eaa8"; }
+
+.fif-google3:before {
+  content: "\eaa9"; }
+
+.fif-google-plus:before {
+  content: "\eaaa"; }
+
+.fif-google-plus2:before {
+  content: "\eaab"; }
+
+.fif-google-plus3:before {
+  content: "\eaac"; }
+
+.fif-hangouts:before {
+  content: "\eaad"; }
+
+.fif-google-drive:before {
+  content: "\eaae"; }
+
+.fif-facebook:before {
+  content: "\eaaf"; }
+
+.fif-facebook2:before {
+  content: "\eab0"; }
+
+.fif-instagram:before {
+  content: "\eab1"; }
+
+.fif-whatsapp:before {
+  content: "\eab2"; }
+
+.fif-spotify:before {
+  content: "\eab3"; }
+
+.fif-twitter:before {
+  content: "\eab5"; }
+
+.fif-vine:before {
+  content: "\eab6"; }
+
+.fif-vk:before {
+  content: "\eab7"; }
+
+.fif-renren:before {
+  content: "\eab8"; }
+
+.fif-sina-weibo:before {
+  content: "\eab9"; }
+
+.fif-rss:before {
+  content: "\eaba"; }
+
+.fif-rss2:before {
+  content: "\eabb"; }
+
+.fif-youtube:before {
+  content: "\eabc"; }
+
+.fif-youtube2:before {
+  content: "\eabd"; }
+
+.fif-vimeo:before {
+  content: "\eabf"; }
+
+.fif-vimeo2:before {
+  content: "\eac0"; }
+
+.fif-dropbox:before {
+  content: "\eacd"; }
+
+.fif-onedrive:before {
+  content: "\eace"; }
+
+.fif-tumblr:before {
+  content: "\ead8"; }
+
+.fif-tumblr2:before {
+  content: "\ead9"; }
+
+.fif-appleinc:before {
+  content: "\eadd"; }
+
+.fif-android:before {
+  content: "\eadf"; }
+
+.fif-windows:before {
+  content: "\eae0"; }
+
+.fif-soundcloud:before {
+  content: "\eae2"; }
+
+.fif-soundcloud2:before {
+  content: "\eae3"; }
+
+.fif-skype:before {
+  content: "\eae4"; }
+
+.fif-hackernews:before {
+  content: "\eae6"; }
+
+.fif-wikipedia:before {
+  content: "\eae7"; }
+
+.fif-linkedin:before {
+  content: "\eae8"; }
+
+.fif-linkedin2:before {
+  content: "\eae9"; }
+
+.fif-lastfm:before {
+  content: "\eaea"; }
+
+.fif-lastfm2:before {
+  content: "\eaeb"; }
+
+.fif-delicious:before {
+  content: "\eaec"; }
+
+.fif-stumbleupon:before {
+  content: "\eaed"; }
+
+.fif-stackoverflow:before {
+  content: "\eaef"; }
+
+/**
+ * @package fif.
+ **/
+ /* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.aligncenter {
+  width: 100%;
+  height: auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+img.aligncenter {
+  width: 100%;
+  height: auto; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
+h1.fif-username,
+h2.fif-description {
+  font-weight: 100;
+  color: #fff; }
+
+h1.fif-username {
+  font-size: 24px;
+  margin: 0 0 10px; }
+
+h2.fif-description {
+  font-size: 13px;
+  margin: 0 0 20px; }
+
+.fif-icon-sidebar {
+  color: white;
+  margin: 0 2px; }
+  .fif-icon-sidebar:before {
+    width: 22px;
+    height: 22px;
+    font-size: 22px; }
+
+.fif-icon-button:before {
+  margin-top: 3px;
+  margin-left: -3px; }
+
+.image-container {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-align: center; }
+
+.profile-picture {
+  width: 122px;
+  height: 122px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 20px auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*==============================================
+                    Header
+==============================================*/
+#masthead {
+  margin-bottom: -68px;
+  background-color: transparent;
+  border-bottom-color: transparent; }
+
+.site-header {
+  padding: 0 !important; }
+
+/*==============================================
+              FIF Nav Onepage
+==============================================*/
+.storefront-primary-navigation {
+  background-color: transparent; }
+
+.primary-navigation {
+  display: block;
+  padding-top: 6px; }
+
+button.menu-toggle {
+  margin-top: 15px;
+  background-color: transparent !important; }
+
+.main-navigation ul li a {
+  padding-top: 3em 0;
+  display: block;
+  text-decoration: none;
+  font-family: Satellite;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: #F1F5D8 !important;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s; }
+
+.main-navigation ul li a:hover {
+  border-bottom: 1px solid #000000; }
+
+.main-navigation ul.menu ul.sub-menu {
+  background-color: rgba(240, 240, 240, 0.5) !important; }
+
+@media only screen and (max-width: 974px) {
+  button.menu-toggle {
+    display: none; }
+
+  .primary-navigation {
+    display: block; }
+
+  .nav-menu {
+    overflow: visible; }
+
+  .nav-menu li {
+    display: inline-block;
+    padding-right: 20px; } }
+/*==============================================
+              Onepage Custom Styles
+==============================================*/
+.article-has-backgroundThumb {
+  z-index: 0;
+  position: relative; }
+
+.backgroundThumb {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10; }
+
+.article-onepage {
+  min-height: 816px; }
+
+.onepage-content {
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.entry-header-onepage h1 {
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 15px;
+  font-family: Satellite;
+  letter-spacing: 4px; }
+
+#primary.content-area {
+  margin-bottom: -36.651px; }
+
+/*==============================================
+
+==============================================*/
+/*==============================================
+             Page ID Custom CSS
+==============================================*/
+/* Home Page */
+#post-27 .entry-title {
+  display: none; }
+@media (max-width: 1000px) {
+  #post-27 .homepage-content .homepage-content {
+    left: 50%;
+    top: 25%;
+    position: absolute; }
+  #post-27 .homepage-content .fif-fif_logo_2018 {
+    font-size: 250px;
+    color: #fff;
+    left: 25%;
+    top: 25%;
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    max-width: 500px;
+    max-height: 500px; } }
+@media (min-width: 1000px) {
+  #post-27 .homepage-content .homepage-content {
+    left: 50%;
+    top: 25%;
+    position: absolute; }
+  #post-27 .homepage-content .fif-fif_logo_2018 {
+    font-size: 250px;
+    color: #fff;
+    left: 25%;
+    top: 25%;
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    max-height: 500px; } }
+
+/* Music Page */
+#post-50 .entry-title {
+  padding: 40px;
+  color: #000; }
+#post-50 h2.woocommerce-loop-product__title {
+  color: #fff; }
+#post-50 .woocommerce-Price-amount.amount {
+  color: #fff; }
+
+/* News Page */
+#post-55 .entry-title {
+  padding: 40px; }
+
+/* Video Page */
+#post-62 .entry-title {
+  padding: 40px; }
+
+/* Gigs Page */
+#post-60 .entry-title {
+  padding: 40px; }
+#post-60 .previous-gigs {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 25px; }
+  #post-60 .previous-gigs p {
+    padding: 20px 20px;
+    color: #f1f5d8; }
+
+/* Gallery Page */
+#post-109 .entry-title {
+  padding: 40px; }
+
+/* About Page */
+#post-64 .entry-title {
+  padding: 40px;
+  color: #000; }
+#post-64 .entry-content {
+  padding-top: 10px; }
+#post-64 .about-fif-bg {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px; }
+  #post-64 .about-fif-bg p {
+    color: #f1f5d8; }
+
+/* Contact Page */
+#post-48 .entry-title {
+  padding: 40px; }
+
+/*==============================================
+              FIF CONTACT FORM
+==============================================*/
+.fif-contact-form {
+  padding: 40px 0;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto; }
+  .fif-contact-form .form-group {
+    margin-bottom: 30px;
+    position: relative; }
+    .fif-contact-form .form-group:before {
+      position: absolute;
+      display: block;
+      content: '';
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #CBCBCB; }
+    .fif-contact-form .form-group .form-control-msg {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 10px; }
+    .fif-contact-form .form-group.has-error:before {
+      background-color: #a94442; }
+
+.fif-form-control {
+  resize: vertical;
+  border: none;
+  border-radius: 0;
+  padding: 8px 15px;
+  outline: none;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important; }
+  .fif-form-control::-webkit-input-placeholder {
+    text-transform: uppercase; }
+  .fif-form-control::-moz-placeholder {
+    text-transform: uppercase; }
+  .fif-form-control:-ms-placeholder {
+    text-transform: uppercase; }
+  .fif-form-control:-moz-placeholder {
+    text-transform: uppercase; }
+  .fif-form-control:hover, .fif-form-control:focus, .fif-form-control:active {
+    box-shadow: none; }
+
+.form-control-msg {
+  display: none; }
+
+.has-error .form-control-msg {
+  display: block; }
+
+.js-show-feedback {
+  display: block; }
+
+/*==============================================
+            Spotify-follow Icon
+==============================================*/
+.fif-follow-spotify {
+  position: fixed;
+  bottom: 10px;
+  margin-left: 20px;
+  z-index: 10; }
+  @media only screen and (max-width: 768px) {
+    .fif-follow-spotify {
+      position: fixed;
+      bottom: 70px;
+      margin-left: 20px;
+      z-index: 10; } }
+
+/*==============================================
+                 Shop Styles
+==============================================*/
+/*==============================================
+                    Footer
+==============================================*/
+.footer-widget-area {
+  border: 1px solid #000;
+  /* For better visualization, not necessary */
+  float: left; }
+
+/* One column */
+.footer-widget-area:nth-child(1):nth-last-child(1) {
+  float: none;
+  /* No need for one column to float */
+  width: 100%;
+  /* Not necessary, but better illustrates technique */ }
+
+/* Two columns */
+.footer-widget-area:nth-child(1):nth-last-child(2),
+.footer-widget-area:nth-child(2):nth-last-child(1) {
+  width: 50%; }
+
+/* Three columns */
+.footer-widget-area:nth-child(1):nth-last-child(3),
+.footer-widget-area:nth-child(2):nth-last-child(2),
+.footer-widget-area:nth-child(3):nth-last-child(1) {
+  width: 33.3333%; }
+
+/* Tag Cloud */
+.tagcloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.tagcloud a {
+  border-radius: 10px;
+  display: inline-block;
+  font-family: Satellite;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0.125rem;
+  padding: 0.4375rem;
+  background: rgba(0, 0, 255, 0.2);
+  border: 1px solid #CBCBCB;
+  transition: all 0.1s ease-in-out; }
+
+.tagcloud a:hover,
+.tagcloud a:focus {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  transform: scale(1.1);
+  text-decoration: none; }
+
+/* Footer Copyright */
+/* Footer Social Media */
+
+/*# sourceMappingURL=fif.css.map */

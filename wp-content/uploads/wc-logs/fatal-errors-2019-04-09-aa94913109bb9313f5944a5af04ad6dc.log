@@ -1,0 +1,4 @@
+2019-04-09T14:54:18+00:00 CRITICAL syntax error, unexpected '1' (T_LNUMBER), expecting ',' or ')' in /Users/andrewgallop/sites/wordpress/FIF/wp-content/themes/FIF Final Project For Launch/inc/fif-onepage-functions.php on line 54
+
+2019-04-09T14:55:18+00:00 CRITICAL syntax error, unexpected '1' (T_LNUMBER), expecting ',' or ')' in /Users/andrewgallop/sites/wordpress/FIF/wp-content/themes/FIF Final Project For Launch/inc/fif-onepage-functions.php on line 54
+

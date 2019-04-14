@@ -1,0 +1,150 @@
+/**
+ * @package fif.
+ **/
+
+ /*--------------------------------------------------------------
+ >>> TABLE OF CONTENTS:
+ ----------------------------------------------------------------
+1) IMPORT
+
+ --------------------------------------------------------------*/
+
+ /*==============================================
+                 1)  IMPORT
+ ==============================================*/
+
+ @import 'base/variables';		//variables
+ @import 'base/mixins';			//mixins
+ @import 'base/placeholders';	//placeholders
+ //@import 'base/fonticons';		//font icons
+ @import 'base/wordpress';		//Wordpress Default
+ @import 'admin/sidebar'; //admin classes
+
+ /*==============================================
+               Onepage Custom Styles
+ ==============================================*/
+
+ .onepagelayer {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    max-width: 100%;
+}
+
+ .article-has-backgroundThumb {
+   z-index: 0;
+   position: relative;
+ }
+
+ .backgroundThumb {
+   background-position:center;
+   background-repeat:no-repeat;
+   background-size:cover;
+   position:absolute;
+   top:0;right:0;bottom:0;left:0;
+   filter:blur(0.6px);
+   opacity:.75;
+   z-index:-1;
+   min-height: 500px;
+ }
+
+.article-onepage {
+    min-height: 700px;
+}
+
+.onepage-content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.entry-header-onepage h1 {
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+ /*==============================================
+               FIF CONTACT FORM
+ ==============================================*/
+
+ // Contact form
+.fif-contact-form {
+	padding: 40px 0;
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+
+	.form-group {
+		margin-bottom: 30px;
+		position: relative;
+
+		&:before {
+			position: absolute;
+			display: block;
+			content: '';
+
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background-color: $grey2;
+		}
+
+		.form-control-msg {
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 10px;
+		}
+
+		&.has-error {
+			&:before {
+				background-color: #a94442;
+			}
+		}
+	}
+}
+
+.fif-form-control {
+	resize: vertical;
+	border: none;
+	border-radius: 0;
+	padding: 8px 15px;
+	outline: none;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+
+	&::-webkit-input-placeholder {
+		text-transform: uppercase;
+	}
+
+	&::-moz-placeholder {
+		text-transform: uppercase;
+	}
+
+	&:-ms-placeholder {
+		text-transform: uppercase;
+	}
+
+	&:-moz-placeholder {
+		text-transform: uppercase;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		box-shadow: none;
+	}
+}
+
+.form-control-msg {
+	display: none;
+}
+
+.has-error {
+	.form-control-msg {
+		display: block;
+	}
+}
+
+.js-show-feedback {
+	display: block;
+}

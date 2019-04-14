@@ -1,0 +1,216 @@
+********************************************************************************
+* DUPLICATOR-LITE: Install-Log
+* STEP-1 START @ 02:26:42
+* VERSION: 1.3.10
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PHP:		7.0.33 | SAPI: cgi-fcgi
+PHP MEMORY:	4294967296 | SUHOSIN: disabled
+SERVER:		Apache
+DOC ROOT:	/home/sites/4b/0/0cc23c8149/public_html
+DOC ROOT 755:	true
+LOG FILE 644:	true
+REQUEST URL:	https://fortnightinflorida.com/dup-installer/main.installer.php
+SAFE MODE :	0
+CONFIG MODE :	NEW
+--------------------------------------
+PRE-EXTRACT-CHECKS
+--------------------------------------
+- PASS: Apache '.htaccess' backed-up to .htaccess-190412142642-5cb0a0220b546-duplicator.bak
+- PASS: Existing Apache '.htaccess' was removed
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME:	20190412_fortnightinflorida_e12d28a1433d07225459_20190412140720_archive.zip
+SIZE:	174.55MB
+
+ZIP:	Shell Exec Unzip
+>>> Starting Shell-Exec Unzip:
+Command: unzip -o -qq '/home/sites/4b/0/0cc23c8149/public_html/20190412_fortnightinflorida_e12d28a1433d07225459_20190412140720_archive.zip' -d '/home/sites/4b/0/0cc23c8149/public_html' 2>&1
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+
+STEP-1 COMPLETE @ 02:28:14 - RUNTIME: 92.2340 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 02:36:19
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.1.35 -- Build Server: 5.6.35
+FILE SIZE:	dup-database__e12d28a-12140720.sql (2.4MB)
+TIMEOUT:	5000
+MAXPACK:	134217728
+SQLMODE:	NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/home/sites/4b/0/0cc23c8149/public_html/dup-installer/dup-installer-data__e12d28a-12140720.sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	4302
+
+wp_commentmeta: (0)
+wp_comments: (0)
+wp_duplicator_packages: (0)
+wp_failed_jobs: (0)
+wp_links: (0)
+wp_mailchimp_carts: (0)
+wp_options: (397)
+wp_postmeta: (2828)
+wp_posts: (462)
+wp_queue: (0)
+wp_term_relationships: (198)
+wp_term_taxonomy: (77)
+wp_termmeta: (49)
+wp_terms: (77)
+wp_ualp_user_activity: (4)
+wp_usermeta: (39)
+wp_users: (1)
+wp_wc_download_log: (0)
+wp_wc_webhooks: (0)
+wp_wd_fb_data: (12)
+wp_wd_fb_info: (1)
+wp_wd_fb_option: (1)
+wp_wd_fb_shortcode: (0)
+wp_wd_fb_theme: (1)
+wp_woocommerce_api_keys: (0)
+wp_woocommerce_attribute_taxonomies: (2)
+wp_woocommerce_downloadable_product_permissions: (0)
+wp_woocommerce_log: (0)
+wp_woocommerce_order_itemmeta: (0)
+wp_woocommerce_order_items: (0)
+wp_woocommerce_payment_tokenmeta: (0)
+wp_woocommerce_payment_tokens: (0)
+wp_woocommerce_sessions: (1)
+wp_woocommerce_shipping_zone_locations: (1)
+wp_woocommerce_shipping_zone_methods: (2)
+wp_woocommerce_shipping_zones: (1)
+wp_woocommerce_tax_rate_locations: (0)
+wp_woocommerce_tax_rates: (0)
+wp_xcloner_scheduler: (0)
+Removed '106' cache/transient rows
+
+INSERT DATA RUNTIME: 4.8518 sec.
+STEP-2 COMPLETE @ 02:36:23 - RUNTIME: 4.9165 sec.
+
+
+
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP-3 START @ 02:38:39
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta^ (0)
+wp_comments^ (0)
+wp_duplicator_packages^ (0)
+wp_failed_jobs^ (0)
+wp_links^ (0)
+wp_mailchimp_carts^ (0)
+wp_options~ (397)
+wp_postmeta~ (2828)
+wp_posts~ (462)
+wp_queue^ (0)
+wp_term_relationships~ (198)
+wp_term_taxonomy~ (77)
+wp_termmeta~ (49)
+wp_terms~ (77)
+wp_ualp_user_activity~ (4)
+wp_usermeta~ (39)
+wp_users~ (1)
+wp_wc_download_log^ (0)
+wp_wc_webhooks^ (0)
+wp_wd_fb_data~ (12)
+wp_wd_fb_info~ (1)
+wp_wd_fb_option~ (1)
+wp_wd_fb_shortcode^ (0)
+wp_wd_fb_theme~ (1)
+wp_woocommerce_api_keys^ (0)
+wp_woocommerce_attribute_taxonomies~ (2)
+wp_woocommerce_downloadable_product_permissions^ (0)
+wp_woocommerce_log^ (0)
+wp_woocommerce_order_itemmeta^ (0)
+wp_woocommerce_order_items^ (0)
+wp_woocommerce_payment_tokenmeta^ (0)
+wp_woocommerce_payment_tokens^ (0)
+wp_woocommerce_sessions~ (1)
+wp_woocommerce_shipping_zone_locations~ (1)
+wp_woocommerce_shipping_zone_methods~ (2)
+wp_woocommerce_shipping_zones~ (1)
+wp_woocommerce_tax_rate_locations^ (0)
+wp_woocommerce_tax_rates^ (0)
+wp_xcloner_scheduler^ (0)
+--------------------------------------
+Search1:	'/Users/andrewgallop/sites/wordpress/FIF' 
+Change1:	'/home/sites/4b/0/0cc23c8149/public_html' 
+Search2:	'\/Users\/andrewgallop\/sites\/wordpress\/FIF' 
+Change2:	'\/home\/sites\/4b\/0\/0cc23c8149\/public_html' 
+Search3:	'%2FUsers%2Fandrewgallop%2Fsites%2Fwordpress%2FFIF%2F' 
+Change3:	'%2Fhome%2Fsites%2F4b%2F0%2F0cc23c8149%2Fpublic_html%2F' 
+Search4:	'\Users\andrewgallop\sites\wordpress\FIF' 
+Change4:	'/home/sites/4b/0/0cc23c8149/public_html' 
+Search5:	'\\Users\\andrewgallop\\sites\\wordpress\\FIF' 
+Change5:	'\/home\/sites\/4b\/0\/0cc23c8149\/public_html' 
+Search6:	'%5CUsers%5Candrewgallop%5Csites%5Cwordpress%5CFIF' 
+Change6:	'%2Fhome%2Fsites%2F4b%2F0%2F0cc23c8149%2Fpublic_html' 
+Search7:	'//localhost:8888/FIF' 
+Change7:	'//fortnightinflorida.com' 
+Search8:	'\/\/localhost:8888\/FIF' 
+Change8:	'\/\/fortnightinflorida.com' 
+Search9:	'%2F%2Flocalhost%3A8888%2FFIF' 
+Change9:	'%2F%2Ffortnightinflorida.com' 
+Search10:	'http://fortnightinflorida.com' 
+Change10:	'https://fortnightinflorida.com' 
+Search11:	'http:\/\/fortnightinflorida.com' 
+Change11:	'https:\/\/fortnightinflorida.com' 
+Search12:	'http%3A%2F%2Ffortnightinflorida.com' 
+Change12:	'https%3A%2F%2Ffortnightinflorida.com' 
+SCANNED:	Tables:39 	|	 Rows:4154 	|	 Cells:25771 
+UPDATED:	Tables:2 	|	 Rows:481 	|	 Cells:586 
+ERRORS:		0 
+RUNTIME:	0.829700 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG ARK FILE:
+ - '/home/sites/4b/0/0cc23c8149/public_html/wp-config.php'
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache 'htaccess.orig' was removed
+
+====================================
+NOTICES
+====================================
+
+No General Notices Found
+
+
+STEP-3 COMPLETE @ 02:38:40 - RUNTIME: 0.8731 sec. 
+
+

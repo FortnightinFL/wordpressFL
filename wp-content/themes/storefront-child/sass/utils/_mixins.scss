@@ -1,0 +1,17 @@
+// FIF Custom Mixins.
+
+@mixin animate ( $attr, $time ) {
+  -webkit-transition: $attr $time ease;
+  -moz-webkit-transition: $attr $time ease;
+  -ms-webkit-transition: $attr $time ease;
+  -o-webkit-transition: $attr $time ease;
+  transition: $attr $time ease;
+}
+
+@mixin transfrom ( $val ) {
+  -webkit-transition: $val;
+  -moz-webkit-transition: $val;
+  -ms-webkit-transition: $val;
+  -o-webkit-transition: $val;
+  transform: $val;
+}

@@ -1,0 +1,55 @@
+/*
+Theme Name:   	Fortnight In Florida 2.0
+Theme URI:    	https://fortnightinflorida.com
+Author:       	Andrew Gallop
+Author URI:     http://drummergallop.com
+Template:     	storefront
+Description:  	This is a wordpress template for Fortnight In Florida's website HQ
+Version:      	2.0.0
+License:      	GNU General Public License v2 or later
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  	storefront
+Tags:         	Music, Fortnight In Florida, HQ, Storefront
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+Storefront is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+*/
+/*
+ * Add your own custom css below this text.
+ */
+ /*==============================================
+               Onepage Custom Styles
+ ==============================================*/
+ .article-has-backgroundThumb {
+   z-index: 0;
+   position: relative; }
+
+ .backgroundThumb {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: -10; }
+
+ .article-onepage {
+   min-height: 816px; }
+
+ .onepage-content {
+   margin-left: 10%;
+   margin-right: 10%; }
+
+ .entry-header-onepage h1 {
+   color: #fff;
+   text-transform: uppercase;
+   padding-top: 15px;
+   font-family: Satellite;
+   letter-spacing: 4px; }
+
+ #primary.content-area {
+   margin-bottom: -36.651px; }
+
+ /*# sourceMappingURL=style.css.map */
