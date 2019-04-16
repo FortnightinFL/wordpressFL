@@ -145,6 +145,8 @@ if ( ! class_exists( 'Storefront_WooCommerce' ) ) :
 			wp_register_script( 'storefront-header-cart', get_template_directory_uri() . '/assets/js/woocommerce/header-cart' . $suffix . '.js', array(), $storefront_version, true );
 			wp_enqueue_script( 'storefront-header-cart' );
 
+			wp_enqueue_script( 'storefront-handheld-footer-bar', get_template_directory_uri() . '/assets/js/footer' . $suffix . '.js', array(), $storefront_version, true );
+
 			if ( ! class_exists( 'Storefront_Sticky_Add_to_Cart' ) && is_product() ) {
 				wp_register_script( 'storefront-sticky-add-to-cart', get_template_directory_uri() . '/assets/js/sticky-add-to-cart' . $suffix . '.js', array(), $storefront_version, true );
 			}
@@ -401,6 +403,13 @@ if ( ! class_exists( 'Storefront_WooCommerce' ) ) :
 		 */
 		public function get_woocommerce_extension_css() {
 			global $storefront;
+
+			if ( ! is_object( $storefront ) ||
+				 ! property_exists( $storefront, 'customizer' ) ||
+				 ! is_a( $storefront->customizer, 'Storefront_Customizer' ) ||
+				 ! method_exists( $storefront->customizer, 'get_storefront_theme_mods' ) ) {
+				return apply_filters( 'storefront_customizer_woocommerce_extension_css', '' );
+			}
 
 			$storefront_theme_mods = $storefront->customizer->get_storefront_theme_mods();
 
