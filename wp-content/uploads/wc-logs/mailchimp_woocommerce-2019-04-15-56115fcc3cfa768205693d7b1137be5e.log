@@ -1,0 +1,536 @@
+2019-04-15T11:55:47+00:00 DEBUG product_submit.debug :: #13 :: Array
+(
+    [id] => 13
+    [title] => Cameo (Digital)
+    [handle] => cameo-digital
+    [url] => https://www.fortnightinflorida.com/product/cameo-digital/
+    [description] => Cameo is a single from Fortnight In Florida. It's was recorded at AiR studios in Hampstead London. It was mastered at AiR Mastering by Ray Staff.
+    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Cameo.jpg?fit=300%2C300&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 13
+                    [title] => Cameo (Digital)
+                    [url] => https://www.fortnightinflorida.com/product/cameo-digital/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Cameo.jpg?fit=300%2C300&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-15T11:55:47+00:00 NOTICE product_submit.success :: updateStoreProduct :: #13
+2019-04-15T16:22:24+00:00 DEBUG product_submit.debug :: #12 :: Array
+(
+    [id] => 12
+    [title] => In-flight Entertainment (Digital)
+    [handle] => in-flight-entertainment-digital
+    [url] => https://www.fortnightinflorida.com/product/in-flight-entertainment-digital/
+    [description] => In-flight Entertainment is the debut album from Fortnight In Florida. Fortnight In Florida crowd funded this album with the help of their loyal and generous fans. It features 12 songs recorded at the legendary Rockfield recording studios in Monmouth, Wales.
+    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/97ea4611-85be-46e7-baec-5885b4a908fd.jpg?fit=300%2C300&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [title] => In-flight Entertainment (Digital)
+                    [url] => https://www.fortnightinflorida.com/product/in-flight-entertainment-digital/
+                    [price] => 9.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/97ea4611-85be-46e7-baec-5885b4a908fd.jpg?fit=300%2C300&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:50
+)
+
+2019-04-15T16:22:24+00:00 NOTICE product_submit.success :: updateStoreProduct :: #12
+2019-04-15T16:33:12+00:00 DEBUG product_submit.debug :: #92 :: Array
+(
+    [id] => 92
+    [title] => Easier To Lose (Single)
+    [handle] => easier-to-lose-single
+    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-single/
+    [description] => <span style="font-weight: 400;">A sequenced synth line buoys the vocal line at the start of ‘Easier To Lose’, the first single to be taken from Fortnight In Florida’s debut album </span><i><span style="font-weight: 400;">In-flight Entertainment</span></i><span style="font-weight: 400;">. Recorded at Rockfield studios under the guidance of engineer and producer Laurence Anslow, Fortnight In Florida packs a raft of diverse contemporary influences, ranging from Holy Ghost! and Massive Attack to Friendly Fires, into their blissed-out lysergic electro pop melange. Immersive, soulful, and subtle but ambitious, ‘Easier To Lose’ sees the group, which started as a purely electronic outfit, coming into their own after the recent incorporation of live elements into their shows and recorded music. As the track progresses, coruscating vocal harmonies and canny percussion enter the fray, swelling to a crescendo before a singular guitar riff sees it out. ‘Easier To Lose’ is a testament to where Fortnight In Florida are at artistically now, ushering in all the yearning romance and vitality of a summer which can’t come too soon.</span>
+
+Easier To Lose is the first single from Fortnight In Florida's debut studio album 'In-flight Entertainment'.
+    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Easier_to_lose-2.jpg?fit=300%2C300&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 92
+                    [title] => Easier To Lose (Single)
+                    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-single/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Easier_to_lose-2.jpg?fit=300%2C300&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-10 01:14:05
+)
+
+2019-04-15T16:33:12+00:00 NOTICE product_submit.success :: updateStoreProduct :: #92
+2019-04-15T16:33:56+00:00 DEBUG product_submit.debug :: #18 :: Array
+(
+    [id] => 18
+    [title] => So Long EP (Digital)
+    [handle] => so-long-ep-digital
+    [url] => https://www.fortnightinflorida.com/product/so-long-ep-digital/
+    [description] => So Long is the debut EP from Fortnight In Florida. It was recorded in London at Snap! Studios in Manor House with producer Laurence Anslow.
+    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/So-Long-EP.jpg?fit=300%2C300&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 18
+                    [title] => So Long EP (Digital)
+                    [url] => https://www.fortnightinflorida.com/product/so-long-ep-digital/
+                    [price] => 3.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/So-Long-EP.jpg?fit=300%2C300&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-15T16:33:56+00:00 NOTICE product_submit.success :: updateStoreProduct :: #18
+2019-04-15T16:34:08+00:00 DEBUG product_submit.debug :: #18 :: Array
+(
+    [id] => 18
+    [title] => So Long EP (Digital)
+    [handle] => so-long-ep-digital
+    [url] => https://www.fortnightinflorida.com/product/so-long-ep-digital/
+    [description] => So Long is the debut EP from Fortnight In Florida. It was recorded in London at Snap! Studios in Manor House with producer Laurence Anslow.
+    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/So-Long-EP.jpg?fit=300%2C300&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 18
+                    [title] => So Long EP (Digital)
+                    [url] => https://www.fortnightinflorida.com/product/so-long-ep-digital/
+                    [price] => 3.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/So-Long-EP.jpg?fit=300%2C300&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-15T16:34:08+00:00 NOTICE product_submit.success :: updateStoreProduct :: #18
+2019-04-15T16:35:11+00:00 DEBUG product_submit.debug :: #16 :: Array
+(
+    [id] => 16
+    [title] => Save Our City (Digital)
+    [handle] => save-our-city-digital
+    [url] => https://www.fortnightinflorida.com/product/save-our-city-digital/
+    [description] => Save Our City is the first single Fortnight In Florida recorded with producer Laurence Anslow at AiR Studios, Hampstead, London.
+    [image_url] => https://i0.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Save-Our-City.jpg?fit=300%2C300&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 16
+                    [title] => Save Our City (Digital)
+                    [url] => https://www.fortnightinflorida.com/product/save-our-city-digital/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i0.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Save-Our-City.jpg?fit=300%2C300&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-15T16:35:11+00:00 NOTICE product_submit.success :: updateStoreProduct :: #16
+2019-04-15T16:36:14+00:00 DEBUG product_submit.debug :: #15 :: Array
+(
+    [id] => 15
+    [title] => Heartbreaker (Digital)
+    [handle] => heartbreaker-digital
+    [url] => https://www.fortnightinflorida.com/product/heartbreaker-digital/
+    [description] => Heartbreaker is a single from Fortnight In Florida that was mastered but never actually released to the world.
+
+An exclusive purchase from the Fortnight In Florida website.
+    [image_url] => https://i0.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Heartbreaker.jpg?fit=300%2C300&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 15
+                    [title] => Heartbreaker (Digital)
+                    [url] => https://www.fortnightinflorida.com/product/heartbreaker-digital/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i0.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Heartbreaker.jpg?fit=300%2C300&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-15T16:36:14+00:00 NOTICE product_submit.success :: updateStoreProduct :: #15
+2019-04-15T16:36:40+00:00 DEBUG product_submit.debug :: #18 :: Array
+(
+    [id] => 18
+    [title] => So Long EP (Digital)
+    [handle] => so-long-ep-digital
+    [url] => https://www.fortnightinflorida.com/product/so-long-ep-digital/
+    [description] => So Long is the debut EP from Fortnight In Florida. It was recorded in London at Snap! Studios in Manor House with producer Laurence Anslow.
+    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/So-Long-EP.jpg?fit=300%2C300&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 18
+                    [title] => So Long EP (Digital)
+                    [url] => https://www.fortnightinflorida.com/product/so-long-ep-digital/
+                    [price] => 3.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/So-Long-EP.jpg?fit=300%2C300&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-15T16:36:41+00:00 NOTICE product_submit.success :: updateStoreProduct :: #18
+2019-04-15T16:37:23+00:00 DEBUG product_submit.debug :: #14 :: Array
+(
+    [id] => 14
+    [title] => Your House (Digital)
+    [handle] => your-house-digital
+    [url] => https://www.fortnightinflorida.com/product/your-house-digital/
+    [description] => Your House was the first single from Fortnight In Florida. Released in 2014 it's become a fan favourite with their supporters new and old.
+    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Your-House.jpg?fit=300%2C300&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 14
+                    [title] => Your House (Digital)
+                    [url] => https://www.fortnightinflorida.com/product/your-house-digital/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Your-House.jpg?fit=300%2C300&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-15T16:37:23+00:00 NOTICE product_submit.success :: updateStoreProduct :: #14
+2019-04-15T16:37:58+00:00 DEBUG product_submit.debug :: #14 :: Array
+(
+    [id] => 14
+    [title] => Your House (Digital)
+    [handle] => your-house-digital
+    [url] => https://www.fortnightinflorida.com/product/your-house-digital/
+    [description] => Your House was the first single from Fortnight In Florida. Released in 2014 it's become a fan favourite with their supporters new and old.
+    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Your-House.jpg?fit=300%2C300&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 14
+                    [title] => Your House (Digital)
+                    [url] => https://www.fortnightinflorida.com/product/your-house-digital/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Your-House.jpg?fit=300%2C300&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-15T16:37:59+00:00 NOTICE product_submit.success :: updateStoreProduct :: #14
+2019-04-15T16:38:37+00:00 DEBUG product_submit.debug :: #13 :: Array
+(
+    [id] => 13
+    [title] => Cameo (Digital)
+    [handle] => cameo-digital
+    [url] => https://www.fortnightinflorida.com/product/cameo-digital/
+    [description] => Cameo is a single from Fortnight In Florida. It's was recorded at AiR studios in Hampstead London. It was mastered at AiR Mastering by Ray Staff.
+    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Cameo.jpg?fit=300%2C300&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 13
+                    [title] => Cameo (Digital)
+                    [url] => https://www.fortnightinflorida.com/product/cameo-digital/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/Cameo.jpg?fit=300%2C300&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:51
+)
+
+2019-04-15T16:38:38+00:00 NOTICE product_submit.success :: updateStoreProduct :: #13
+2019-04-15T16:39:14+00:00 DEBUG product_submit.debug :: #12 :: Array
+(
+    [id] => 12
+    [title] => In-flight Entertainment (Digital)
+    [handle] => in-flight-entertainment-digital
+    [url] => https://www.fortnightinflorida.com/product/in-flight-entertainment-digital/
+    [description] => In-flight Entertainment is the debut album from Fortnight In Florida. Fortnight In Florida crowd funded this album with the help of their loyal and generous fans. It features 12 songs recorded at the legendary Rockfield recording studios in Monmouth, Wales.
+    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/97ea4611-85be-46e7-baec-5885b4a908fd.jpg?fit=300%2C300&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 12
+                    [title] => In-flight Entertainment (Digital)
+                    [url] => https://www.fortnightinflorida.com/product/in-flight-entertainment-digital/
+                    [price] => 9.99
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2018/08/97ea4611-85be-46e7-baec-5885b4a908fd.jpg?fit=300%2C300&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2018-08-09 22:47:50
+)
+
+2019-04-15T16:39:14+00:00 NOTICE product_submit.success :: updateStoreProduct :: #12
+2019-04-15T17:30:39+00:00 DEBUG product_submit.debug :: #696 :: Array
+(
+    [id] => 696
+    [title] => Easier To Lose (Fallow Remix)
+    [handle] => easier-to-lose-fallow-remix
+    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-fallow-remix/
+    [description] => <span style="font-weight: 400;"> Fallow pulls out all the stops and uses every trick in the book to turn his remix into an instant house classic. With slick production on the vocals, a clever inversion of the main chord progression and even a Caribbean twist by way of a steel drum, nod the track towards the Balearic shores of the Florida Keys.</span>
+    [image_url] => https://i0.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/Fallow.jpg?fit=300%2C297&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 696
+                    [title] => Easier To Lose (Fallow Remix)
+                    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-fallow-remix/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i0.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/Fallow.jpg?fit=300%2C297&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2019-04-15 17:30:32
+)
+
+2019-04-15T17:30:39+00:00 NOTICE product_submit.success :: addStoreProduct :: #696
+2019-04-15T17:31:13+00:00 DEBUG product_submit.debug :: #696 :: Array
+(
+    [id] => 696
+    [title] => Easier To Lose (Fallow Remix)
+    [handle] => easier-to-lose-fallow-remix
+    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-fallow-remix/
+    [description] => <span style="font-weight: 400;"> Fallow pulls out all the stops and uses every trick in the book to turn his remix into an instant house classic. With slick production on the vocals, a clever inversion of the main chord progression and even a Caribbean twist by way of a steel drum, nod the track towards the Balearic shores of the Florida Keys.</span>
+    [image_url] => https://i0.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/Fallow.jpg?fit=300%2C297&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 696
+                    [title] => Easier To Lose (Fallow Remix)
+                    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-fallow-remix/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i0.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/Fallow.jpg?fit=300%2C297&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2019-04-15 17:30:32
+)
+
+2019-04-15T17:31:13+00:00 NOTICE product_submit.success :: updateStoreProduct :: #696
+2019-04-15T17:33:46+00:00 DEBUG product_submit.debug :: #704 :: Array
+(
+    [id] => 704
+    [title] => Easier To Lose (Ableminds Remix)
+    [handle] => easier-to-lose-ableminds-remix
+    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-ableminds-remix/
+    [description] => <span style="font-weight: 400;">Nikola Tesla meets Prince in this electrifying pop classic by Ableminds. A sophisticated excavation of the pop sensibilities of ‘Easier to Lose’ gives this remix a fresh and insightful feel, making it prime material for the glitch-funk showcase at SXSW</span>
+    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/Ableminds.jpg?fit=300%2C297&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 704
+                    [title] => Easier To Lose (Ableminds Remix)
+                    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-ableminds-remix/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/Ableminds.jpg?fit=300%2C297&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2019-04-15 17:33:05
+)
+
+2019-04-15T17:33:47+00:00 NOTICE product_submit.success :: addStoreProduct :: #704
+2019-04-15T17:33:47+00:00 DEBUG product_submit.debug :: #704 :: Array
+(
+    [id] => 704
+    [title] => Easier To Lose (Ableminds Remix)
+    [handle] => easier-to-lose-ableminds-remix
+    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-ableminds-remix/
+    [description] => <span style="font-weight: 400;">Nikola Tesla meets Prince in this electrifying pop classic by Ableminds. A sophisticated excavation of the pop sensibilities of ‘Easier to Lose’ gives this remix a fresh and insightful feel, making it prime material for the glitch-funk showcase at SXSW</span>
+    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/Ableminds.jpg?fit=300%2C297&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 704
+                    [title] => Easier To Lose (Ableminds Remix)
+                    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-ableminds-remix/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i1.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/Ableminds.jpg?fit=300%2C297&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2019-04-15 17:33:05
+)
+
+2019-04-15T17:33:47+00:00 NOTICE product_submit.success :: updateStoreProduct :: #704
+2019-04-15T17:38:08+00:00 DEBUG product_submit.debug :: #705 :: Array
+(
+    [id] => 705
+    [title] => Easier To Lose (DIMIX Remix)
+    [handle] => easier-to-lose-dimix-remix
+    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-dimix-remix/
+    [description] => <span style="font-weight: 400;">Belgian EDM veteran DIMIX captures the four-to-the-floor dance potential in ‘Easier to Lose’ and transforms it into the kind of after-midnight techno thumper that pounds through sticky Antwerp dance floors in the pre-dawn starlight. </span>
+    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/DIMIX.jpg?fit=300%2C297&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 705
+                    [title] => Easier To Lose (DIMIX Remix)
+                    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-dimix-remix/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/DIMIX.jpg?fit=300%2C297&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2019-04-15 17:37:11
+)
+
+2019-04-15T17:38:08+00:00 NOTICE product_submit.success :: addStoreProduct :: #705
+2019-04-15T17:38:08+00:00 DEBUG product_submit.debug :: #705 :: Array
+(
+    [id] => 705
+    [title] => Easier To Lose (DIMIX Remix)
+    [handle] => easier-to-lose-dimix-remix
+    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-dimix-remix/
+    [description] => <span style="font-weight: 400;">Belgian EDM veteran DIMIX captures the four-to-the-floor dance potential in ‘Easier to Lose’ and transforms it into the kind of after-midnight techno thumper that pounds through sticky Antwerp dance floors in the pre-dawn starlight. </span>
+    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/DIMIX.jpg?fit=300%2C297&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 705
+                    [title] => Easier To Lose (DIMIX Remix)
+                    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-dimix-remix/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/DIMIX.jpg?fit=300%2C297&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2019-04-15 17:37:11
+)
+
+2019-04-15T17:38:08+00:00 NOTICE product_submit.success :: updateStoreProduct :: #705
+2019-04-15T17:40:57+00:00 DEBUG product_submit.debug :: #706 :: Array
+(
+    [id] => 706
+    [title] => Easier To Lose (Darkjoint Remix)
+    [handle] => easier-to-lose-darkjoint-remix
+    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-darkjoint-remix/
+    [description] => <span style="font-weight: 400;">Pulsating saw waves, thumping beats and a bass noise culled from some Ridley Scott fever dream transports ‘Easier to Lose’ from the Florida Keys to a neon-soaked 8-bit city skyline.</span>
+    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/Darkjoint.jpg?fit=300%2C297&ssl=1
+    [variants] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 706
+                    [title] => Easier To Lose (Darkjoint Remix)
+                    [url] => https://www.fortnightinflorida.com/product/easier-to-lose-darkjoint-remix/
+                    [price] => 1
+                    [inventory_quantity] => 1000000
+                    [image_url] => https://i2.wp.com/www.fortnightinflorida.com/wp-content/uploads/2019/04/Darkjoint.jpg?fit=300%2C297&ssl=1
+                    [backorders] => false
+                    [visibility] => visible
+                )
+
+        )
+
+    [published_at_foreign] => 2019-04-15 17:40:35
+)
+
+2019-04-15T17:40:57+00:00 NOTICE product_submit.success :: addStoreProduct :: #706
