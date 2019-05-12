@@ -129,10 +129,10 @@ if (!class_exists('YITH_Pre_Order_Admin')) {
 		    $menu_title = 'Pre-Order';
 
 		    $admin_tabs = apply_filters( 'yith_wcpo_admin_tabs',
-			    array( 'settings' => __( 'Settings', 'yith-woocommerce-pre-order' ) ) );
+			    array( 'settings' => __( 'Settings', 'yith-pre-order-for-woocommerce' ) ) );
 
 		    if ( $this->show_premium_landing ) {
-			    $admin_tabs['premium-landing'] = __( 'Premium Version', 'yith-woocommerce-pre-order' );
+			    $admin_tabs['premium-landing'] = __( 'Premium Version', 'yith-pre-order-for-woocommerce' );
 		    }
 
 		    $args = array(
@@ -197,50 +197,50 @@ if (!class_exists('YITH_Pre_Order_Admin')) {
 	    public function get_sidebar_link() {
 		    $links = array(
 			    array(
-				    'title' => __( 'Plugin documentation', 'yith-woocommerce-pre-order' ),
+				    'title' => __( 'Plugin documentation', 'yith-pre-order-for-woocommerce' ),
 				    'url'   => $this->_official_documentation,
 			    ),
 			    array(
-				    'title' => __( 'Help Center', 'yith-woocommerce-pre-order' ),
+				    'title' => __( 'Help Center', 'yith-pre-order-for-woocommerce' ),
 				    'url'   => 'http://support.yithemes.com/hc/en-us/categories/202568518-Plugins',
 			    ),
 		    );
 
 		    if ( defined( 'YITH_WCPO_FREE_INIT' ) ) {
 			    $links[] = array(
-				    'title' => __( 'Discover the premium version', 'yith-woocommerce-pre-order' ),
+				    'title' => __( 'Discover the premium version', 'yith-pre-order-for-woocommerce' ),
 				    'url'   => $this->_premium_landing,
 			    );
 
 			    $links[] = array(
-				    'title' => __( 'Free Vs Premium', 'yith-woocommerce-pre-order' ),
+				    'title' => __( 'Free Vs Premium', 'yith-pre-order-for-woocommerce' ),
 				    'url'   => 'https://yithemes.com/themes/plugins/yith-woocommerce-pre-order/#tab-free_vs_premium_tab',
 			    );
 
 			    $links[] = array(
-				    'title' => __( 'Premium live demo', 'yith-woocommerce-pre-order' ),
+				    'title' => __( 'Premium live demo', 'yith-pre-order-for-woocommerce' ),
 				    'url'   => $this->_premium_live
 			    );
 
 			    $links[] = array(
-				    'title' => __( 'WordPress support forum', 'yith-woocommerce-pre-order' ),
+				    'title' => __( 'WordPress support forum', 'yith-pre-order-for-woocommerce' ),
 				    'url'   => 'https://wordpress.org/plugins/yith-woocommerce-pre-order/',
 			    );
 
 			    $links[] = array(
-				    'title' => sprintf( '%s (%s %s)', __( 'Changelog', 'yith-woocommerce-pre-order' ), __( 'current version', 'yith-woocommerce-pre-order' ), YITH_WCPO_VERSION ),
+				    'title' => sprintf( '%s (%s %s)', __( 'Changelog', 'yith-pre-order-for-woocommerce' ), __( 'current version', 'yith-pre-order-for-woocommerce' ), YITH_WCPO_VERSION ),
 				    'url'   => 'https://yithemes.com/docs-plugins/yith-woocommerce-pre-order/06-changelog-free.html',
 			    );
 		    }
 
 		    if ( defined( 'YITH_WCPO_PREMIUM' ) ) {
 			    $links[] = array(
-				    'title' => __( 'Support platform', 'yith-woocommerce-pre-order' ),
+				    'title' => __( 'Support platform', 'yith-pre-order-for-woocommerce' ),
 				    'url'   => 'https://yithemes.com/my-account/support/dashboard/',
 			    );
 
 			    $links[] = array(
-				    'title' => sprintf( '%s (%s %s)', __( 'Changelog', 'yith-woocommerce-pre-order' ), __( 'current version', 'yith-woocommerce-pre-order' ), YITH_WCPO_VERSION ),
+				    'title' => sprintf( '%s (%s %s)', __( 'Changelog', 'yith-pre-order-for-woocommerce' ), __( 'current version', 'yith-pre-order-for-woocommerce' ), YITH_WCPO_VERSION ),
 				    'url'   => 'https://yithemes.com/docs-plugins/yith-woocommerce-pre-order/07-changelog-premium.html',
 			    );
 		    }
@@ -287,7 +287,7 @@ if (!class_exists('YITH_Pre_Order_Admin')) {
                 $filter_class = isset( $_GET['pre-ordered'] ) ? 'current' : '';
 
                 $views[ 'pre-ordered' ] = sprintf( '<a href="%s" class="%s">%s <span class="count">(%d)</span></a>',
-                    $filter_url, $filter_class, __( 'Pre-Ordered', 'yith-woocommerce-pre-order' ), count( $pre_ordered_count ) );
+                    $filter_url, $filter_class, __( 'Pre-Ordered', 'yith-pre-order-for-woocommerce' ), count( $pre_ordered_count ) );
             }
             return $views;
         }
@@ -341,6 +341,17 @@ if (!class_exists('YITH_Pre_Order_Admin')) {
 
             return $where;
         }
+
+	    /**
+	     * Get the premium landing uri
+	     *
+	     * @since   1.0.0
+	     * @author   Carlos Rodríguez <carlos.rodriguez@yourinspiration.it>
+	     * @return  string The premium landing link
+	     */
+	    public function get_premium_landing_uri() {
+		    return $this->_premium_landing;
+	    }
 
     }
 }

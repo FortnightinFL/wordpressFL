@@ -58,8 +58,8 @@ if ( ! class_exists( 'YITH_Pre_Order_Edit_Product_Page' ) ) {
 				'ywpo_preorder' => array(
 					'id'            => '_ywpo_preorder',
 					'wrapper_class' => 'show_if_simple',
-					'label'         => _x( 'Pre-Order', 'Set the product as a Pre-Order product.','yith-woocommerce-pre-order' ),
-					'description'   => __( 'Set the Pre-Order status for this product.', 'yith-woocommerce-pre-order' ),
+					'label'         => _x( 'Pre-Order', 'Set the product as a Pre-Order product.','yith-pre-order-for-woocommerce' ),
+					'description'   => __( 'Set the Pre-Order status for this product.', 'yith-pre-order-for-woocommerce' ),
 					'default'       => 'no'
 				)
 			);
@@ -87,8 +87,8 @@ if ( ! class_exists( 'YITH_Pre_Order_Edit_Product_Page' ) ) {
 				<input type="checkbox" class="checkbox variable_is_preorder"
 					   name="_ywpo_preorder[<?php echo $loop; ?>]"
 					<?php checked( $is_preorder, esc_attr( 'yes' ) ); ?> />
-				<?php _ex( 'Pre-Order', 'Set the variation to Pre-Order status.','yith-woocommerce-pre-order' ); ?>
-				<?php echo wc_help_tip( __( 'Enable this option to set this variation to the Pre-Order status.', 'yith-woocommerce-pre-order' ) ); ?>
+				<?php _ex( 'Pre-Order', 'Set the variation to Pre-Order status.','yith-pre-order-for-woocommerce' ); ?>
+				<?php echo wc_help_tip( __( 'Enable this option to set this variation to the Pre-Order status.', 'yith-pre-order-for-woocommerce' ) ); ?>
 			</label>
 			<?php
 		}

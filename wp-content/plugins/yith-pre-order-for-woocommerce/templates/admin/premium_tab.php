@@ -209,23 +209,24 @@ if ( ! defined( 'YITH_WCPO_VERSION' ) ) {
             display: none;
         }
     }
-</style> 
+</style>
+<?php $admin = YITH_Pre_Order_Admin::get_instance(); ?>
 <div class="landing">
     <div class="section section-cta section-odd">
         <div class="landing-container">
             <div class="premium-cta">
                 <p>
-                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH Pre-Order for WooCommerce%2$s to benefit from all features!','yith-woocommerce-pre-order'),'<span class="highlight">','</span>' );?>
+                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH Pre-Order for WooCommerce%2$s to benefit from all features!','yith-pre-order-for-woocommerce'),'<span class="highlight">','</span>' );?>
                 </p>
                 <a href="<?php echo $this->get_premium_landing_uri() ?>" target="_blank" class="premium-cta-button button btn">
-                    <span class="highlight"><?php _e('UPGRADE','yith-woocommerce-pre-order');?></span>
-                    <span><?php _e('to the premium version','yith-woocommerce-pre-order');?></span>
+                    <span class="highlight"><?php _e('UPGRADE','yith-pre-order-for-woocommerce');?></span>
+                    <span><?php _e('to the premium version','yith-pre-order-for-woocommerce');?></span>
                 </a>
             </div>
         </div>
     </div>
     <div class="section section-even clear" style="background: url(<?php echo YITH_WCPO_ASSETS_URL?>/images/01-bg.png) no-repeat #fff; background-position: 85% 75%">
-        <h1><?php _e('Premium Features','yith-woocommerce-pre-order');?></h1>
+        <h1><?php _e('Premium Features','yith-pre-order-for-woocommerce');?></h1>
         <div class="landing-container">
             <div class="col-1">
                 <img src="<?php echo YITH_WCPO_ASSETS_URL?>/images/01.png" />
@@ -233,10 +234,10 @@ if ( ! defined( 'YITH_WCPO_VERSION' ) ) {
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_WCPO_ASSETS_URL?>/images/01-icon.png" />
-                    <h2><?php _e('Pre-Order period','yith-woocommerce-pre-order');?></h2>
+                    <h2><?php _e('Pre-Order period','yith-pre-order-for-woocommerce');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf(__('Create tailored sales strategies and set the %1$sexpiring date%2$s of the pre-order period for each product after which the user can complete the purchase. ', 'yith-woocommerce-pre-order'), '<b>', '</b>');?>
+                    <?php echo sprintf(__('Create tailored sales strategies and set the %1$sexpiring date%2$s of the pre-order period for each product after which the user can complete the purchase. ', 'yith-pre-order-for-woocommerce'), '<b>', '</b>');?>
                 </p>
             </div>
         </div>
@@ -246,10 +247,10 @@ if ( ! defined( 'YITH_WCPO_VERSION' ) ) {
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_WCPO_ASSETS_URL?>/images/02-icon.png" />
-                    <h2><?php _e('Out-of-stock products','yith-woocommerce-pre-order');?></h2>
+                    <h2><?php _e('Out-of-stock products','yith-pre-order-for-woocommerce');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf(__( 'An out-of-stock product prevents the user purchasing it. %3$s To avoid this to happen, you can set the product as %1$s"pre-order"%2$s every time it is currently out of stock.','yith-woocommerce-pre-order' ),'<b>','</b>','<br>');?></p>
+                    <?php echo sprintf(__( 'An out-of-stock product prevents the user purchasing it. %3$s To avoid this to happen, you can set the product as %1$s"pre-order"%2$s every time it is currently out of stock.','yith-pre-order-for-woocommerce' ),'<b>','</b>','<br>');?></p>
             </div>
             <div class="col-1">
                 <img src="<?php echo YITH_WCPO_ASSETS_URL?>/images/02.png" />
@@ -264,13 +265,13 @@ if ( ! defined( 'YITH_WCPO_VERSION' ) ) {
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_WCPO_ASSETS_URL?>/images/03-icon.png" />
-                    <h2><?php _e( 'Notification email ','yith-woocommerce-pre-order');?></h2>
+                    <h2><?php _e( 'Notification email ','yith-pre-order-for-woocommerce');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf(__('The administrator receives %1$stwo notification emails:%2$s one when a user purchases a pre-order product and one when the expiring date of the pre-order period for a product of the shop is approaching. ','yith-woocommerce-pre-order'),'<b>','</b>');?>
+                    <?php echo sprintf(__('The administrator receives %1$stwo notification emails:%2$s one when a user purchases a pre-order product and one when the expiring date of the pre-order period for a product of the shop is approaching. ','yith-pre-order-for-woocommerce'),'<b>','</b>');?>
                 </p>
                 <p>
-                    <?php echo sprintf(__('The users receive a notification email as well when the pre-order product they purchased is %1$sback in stock%2$s. ','yith-woocommerce-pre-order'),'<b>','</b>');?>
+                    <?php echo sprintf(__('The users receive a notification email as well when the pre-order product they purchased is %1$sback in stock%2$s. ','yith-pre-order-for-woocommerce'),'<b>','</b>');?>
                 </p>
             </div>
         </div>
@@ -280,10 +281,10 @@ if ( ! defined( 'YITH_WCPO_VERSION' ) ) {
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_WCPO_ASSETS_URL?>/images/04-icon.png" />
-                    <h2><?php _e('Special offer','yith-woocommerce-pre-order');?></h2>
+                    <h2><?php _e('Special offer','yith-pre-order-for-woocommerce');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __( 'Apply a %1$smarkup%2$s or a %1$sdiscount%2$s to the product price limited only to the pre-order period. ','yith-woocommerce-pre-order' ),'<b>','</b>' );?>
+                    <?php echo sprintf( __( 'Apply a %1$smarkup%2$s or a %1$sdiscount%2$s to the product price limited only to the pre-order period. ','yith-pre-order-for-woocommerce' ),'<b>','</b>' );?>
                 </p>
             </div>
             <div class="col-1">
@@ -299,10 +300,10 @@ if ( ! defined( 'YITH_WCPO_VERSION' ) ) {
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_WCPO_ASSETS_URL?>/images/05-icon.png" />
-                    <h2><?php _e('Bulk actions','yith-woocommerce-pre-order');?></h2>
+                    <h2><?php _e('Bulk actions','yith-pre-order-for-woocommerce');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __('Speed your procedures using WordPress bulk actions. %3$sSet the "pre-order" status on several products of your shop at the same time sorting them by %1$stags%2$s and/or %1$scategories%2$s.','yith-woocommerce-pre-order'),'<b>','</b>','<br>' );?></p>
+                    <?php echo sprintf( __('Speed your procedures using WordPress bulk actions. %3$sSet the "pre-order" status on several products of your shop at the same time sorting them by %1$stags%2$s and/or %1$scategories%2$s.','yith-pre-order-for-woocommerce'),'<b>','</b>','<br>' );?></p>
             </div>
         </div>
     </div>
@@ -311,13 +312,13 @@ if ( ! defined( 'YITH_WCPO_VERSION' ) ) {
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_WCPO_ASSETS_URL?>/images/06-icon.png" />
-                    <h2><?php _e('Custom text','yith-woocommerce-pre-order');?></h2>
+                    <h2><?php _e('Custom text','yith-pre-order-for-woocommerce');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __( 'Customize the %1$slabel%2$s of "Add to Cart" button to show the %1$stext%2$s that better suits your "Pre-Order" products.','yith-woocommerce-pre-order' ),'<b>','</b>' );?>
+                    <?php echo sprintf( __( 'Customize the %1$slabel%2$s of "Add to Cart" button to show the %1$stext%2$s that better suits your "Pre-Order" products.','yith-pre-order-for-woocommerce' ),'<b>','</b>' );?>
                 </p>
                 <p>
-                    <?php echo sprintf( __( 'Use the placeholders to insert the %1$sexpiration date%2$s of the "Pre-Order" status in the message. ','yith-woocommerce-pre-order' ),'<b>','</b>' );?>
+                    <?php echo sprintf( __( 'Use the placeholders to insert the %1$sexpiration date%2$s of the "Pre-Order" status in the message. ','yith-pre-order-for-woocommerce' ),'<b>','</b>' );?>
                 </p>
             </div>
             <div class="col-1">
@@ -333,13 +334,13 @@ if ( ! defined( 'YITH_WCPO_VERSION' ) ) {
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_WCPO_ASSETS_URL?>/images/07-icon.png" />
-                    <h2><?php _e('Prevent users from mixing products in the cart','yith-woocommerce-pre-order');?></h2>
+                    <h2><?php _e('Prevent users from mixing products in the cart','yith-pre-order-for-woocommerce');?></h2>
                 </div>
                 <p>
-                    <?php _e('Hot news! Now you can prevent the purchase combining pre-order and other products of a different type. ','yith-woocommerce-pre-order');?>
+                    <?php _e('Hot news! Now you can prevent the purchase combining pre-order and other products of a different type. ','yith-pre-order-for-woocommerce');?>
                 </p>
                 <p>
-                    <?php echo sprintf( __('Enable the specific option and the system will manage everything. If a pre-order product type is already available in the cart, %1$sthe user could not add other products%2$s unless they are of the same type. ','yith-woocommerce-pre-order'),'<b>','</b>' );?>
+                    <?php echo sprintf( __('Enable the specific option and the system will manage everything. If a pre-order product type is already available in the cart, %1$sthe user could not add other products%2$s unless they are of the same type. ','yith-pre-order-for-woocommerce'),'<b>','</b>' );?>
                 </p>
             </div>
         </div>
@@ -348,11 +349,11 @@ if ( ! defined( 'YITH_WCPO_VERSION' ) ) {
         <div class="landing-container">
             <div class="premium-cta">
                 <p>
-                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH Pre-Order for WooCommerce%2$s to benefit from all features!','yith-woocommerce-pre-order'),'<span class="highlight">','</span>' );?>
+                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH Pre-Order for WooCommerce%2$s to benefit from all features!','yith-pre-order-for-woocommerce'),'<span class="highlight">','</span>' );?>
                 </p>
                 <a href="<?php echo $this->get_premium_landing_uri() ?>" target="_blank" class="premium-cta-button button btn">
-                    <span class="highlight"><?php _e('UPGRADE','yith-woocommerce-pre-order');?></span>
-                    <span><?php _e('to the premium version','yith-woocommerce-pre-order');?></span>
+                    <span class="highlight"><?php _e('UPGRADE','yith-pre-order-for-woocommerce');?></span>
+                    <span><?php _e('to the premium version','yith-pre-order-for-woocommerce');?></span>
                 </a>
             </div>
         </div>

@@ -152,7 +152,11 @@ if (!function_exists('ual_get_activity_function')) {
     function ual_get_activity_function($action, $obj_type, $post_id, $post_title) {
         $current_user_id = $current_user_display_name = $user_mail = $user_role = $modified_date = '';
         $modified_date = current_time('mysql');
-        $ip = $_SERVER['REMOTE_ADDR'];
+        $ips = $_SERVER['REMOTE_ADDR'];
+        $ip = '';
+        if(ualAllowIp()) {
+            $ip = $ips;
+        }
         $current_user_id = get_current_user_id();
         $user = new WP_User($current_user_id);
         $user_mail = $user->user_email;
@@ -170,7 +174,18 @@ if (!function_exists('ual_get_activity_function')) {
     }
 
 }
-
+/*
+ * Function to check if Ipaddress is allowed
+ */
+if(!function_exists('ualAllowIp')) {
+    function ualAllowIp() {
+        $ualpAllowIp = get_option('ualpAllowIp');
+        if($ualpAllowIp == 1) {
+            return true;
+        }
+        return false;
+    }
+}
 /*
  * Add activity for the current user when login
  *
@@ -193,7 +208,11 @@ if (!function_exists('ual_shook_wp_login')):
         $post_id = $current_user_id;
         $post_title = $user_login;
         $modified_date = current_time('mysql');
-        $ip = $_SERVER['REMOTE_ADDR'];
+        $ips = $_SERVER['REMOTE_ADDR'];
+        $ip = '';
+        if(ualAllowIp()) {
+            $ip = $ips;
+        }
         $current_user_display_name = $user->display_name;
         ual_user_activity_add($post_id, $post_title, $obj_type, $current_user_id, $current_user_display_name, $user_role, $user_mail, $modified_date, $ip, $action);
     }
@@ -743,7 +762,9 @@ if (!function_exists('ual_shook_transition_post_status')){
             $action = $obj_type .' trashed';
         } elseif ( 'trash' === $old_status ) {
             $action = $obj_type .' restored';
-        } elseif ( 'publish' === $new_status && 'draft' != $old_status ) {
+        } elseif ('publish' === $old_status && 'draft' != $old_status) { 
+            $action = $obj_type .' updated';
+        } else if ('publish' === $new_status && 'draft' != $old_status) {
             $action = $obj_type .' created';
         } else {
             $action = $obj_type .' updated';
@@ -888,7 +909,11 @@ if (!function_exists('ual_shook_wp_login_failed')):
         $obj_type = "user";
         $post_title = $user;
         $modified_date = current_time('mysql');
-        $ip = $_SERVER['REMOTE_ADDR'];
+        $ips = $_SERVER['REMOTE_ADDR'];
+        $ip = '';
+        if(ualAllowIp()) {
+            $ip = $ips;
+        }
         $user_detail = get_user_by('login', $user);
         if (isset($user_detail) && $user_detail != '') {
             $current_user_id = $user_detail->ID;
@@ -1010,8 +1035,8 @@ if (!function_exists('admin_notice_message')) {
      */
     function admin_notice_message($class, $message) {
         ?>
-        <div class="<?php _e($class, 'user-activity-log'); ?> is-dismissible notice settings-error">
-            <p><?php _e($message, 'user-activity-log'); ?></p>
+        <div class="<?php echo $class; ?> is-dismissible notice settings-error">
+            <p><?php echo $message; ?></p>
         </div>
         <?php
     }

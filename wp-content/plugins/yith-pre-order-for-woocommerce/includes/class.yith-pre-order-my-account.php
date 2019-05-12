@@ -51,7 +51,7 @@ if ( ! class_exists( 'YITH_Pre_Order_My_Account' ) ) {
 
         public function show_pre_order_section(  ) {
             if ( $this->the_user_has_pre_orders() ) {
-                echo '<h2>' . __( 'My Pre-Orders', 'yith-woocommerce-pre-order' ) . '</h2>';
+                echo '<h2>' . __( 'My Pre-Orders', 'yith-pre-order-for-woocommerce' ) . '</h2>';
                 $this->endpoint_content();
             }
         }
@@ -87,7 +87,7 @@ if ( ! class_exists( 'YITH_Pre_Order_My_Account' ) ) {
 
             $content = ob_get_clean();
 
-            $post->post_title = __( 'My Pre-order List', 'yith-woocommerce-pre-order' );
+            $post->post_title = __( 'My Pre-order List', 'yith-pre-order-for-woocommerce' );
             $post->post_content = $content;
         }
 
@@ -97,7 +97,7 @@ if ( ! class_exists( 'YITH_Pre_Order_My_Account' ) ) {
             $order_has_preorder = yit_get_prop( $order, '_order_has_preorder', true );
             if ( 'yes' == $order_has_preorder ) {
                 echo wc_get_order_status_name( $order->get_status() );
-                echo '<br><mark>' . esc_html( __( 'Has Pre-Orders', 'yith-woocommerce-pre-order' ) ) . '</mark>';
+                echo '<br><mark>' . esc_html( __( 'Has Pre-Orders', 'yith-pre-order-for-woocommerce' ) ) . '</mark>';
             } else {
                 echo wc_get_order_status_name( $order->get_status() );
             }
@@ -106,7 +106,7 @@ if ( ! class_exists( 'YITH_Pre_Order_My_Account' ) ) {
         public function add_pre_order_info_on_single_order_page( $item_id, $item, $order ) {
         	$is_pre_order = ! empty( $item['ywpo_item_preorder'] ) ? $item['ywpo_item_preorder'] : '';
             if ( 'yes' == $is_pre_order ) {
-                echo '<div>' . __( 'Pre-Order product', 'yith-woocommerce-pre-order' ) . '</div>';
+                echo '<div>' . __( 'Pre-Order product', 'yith-pre-order-for-woocommerce' ) . '</div>';
             }
 
         }
@@ -170,7 +170,7 @@ if ( ! class_exists( 'YITH_Pre_Order_My_Account' ) ) {
                 unset( $items['customer-logout'] );
 
                 // Insert your custom endpoint.
-                $items['my-pre-orders'] =__( 'My Pre-Orders', 'yith-woocommerce-pre-order' );
+                $items['my-pre-orders'] =__( 'My Pre-Orders', 'yith-pre-order-for-woocommerce' );
 
                 // Insert back the logout item.
                 $items['customer-logout'] = $logout;
@@ -191,7 +191,7 @@ if ( ! class_exists( 'YITH_Pre_Order_My_Account' ) ) {
 
             if ( $is_endpoint && ! is_admin() && is_main_query() && in_the_loop() && is_account_page() ) {
                 // New page title.
-                $title = __( 'My Pre-Orders', 'yith-woocommerce-pre-order' );
+                $title = __( 'My Pre-Orders', 'yith-pre-order-for-woocommerce' );
 
                 remove_filter( 'the_title', array( $this, 'endpoint_title' ) );
             }

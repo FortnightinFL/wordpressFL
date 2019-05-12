@@ -374,15 +374,15 @@ if (!function_exists('ual_user_activity_setting_function')):
                                         <span class="tablenav-pages-navspan" aria-hidden="true">&laquo;</span>
                                         <span class="tablenav-pages-navspan" aria-hidden="true">&lsaquo;</span>
                                     <?php } else { ?>
-                                        <a class="first-page <?php if ($paged == '1') echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=general_settings_menu').'&paged=1&display=' . $display . '&txtsearch=' . $search; ?>" title="Go to the first page">&laquo;</a>
-                                        <a class="prev-page <?php if ($paged == '1') echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=general_settings_menu').'&paged=' . $prev_page . '&display=' . $display . '&txtsearch=' . $search; ?>" title="Go to the previous page">&lsaquo;</a>
+                                        <a class="first-page <?php if ($paged == '1') echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=general_settings_menu').'&paged=1&display=' . $display . '&txtsearch=' . $search; ?>" title="<?php _e('Go to the first page', 'user-activity-log'); ?>">&laquo;</a>
+                                        <a class="prev-page <?php if ($paged == '1') echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=general_settings_menu').'&paged=' . $prev_page . '&display=' . $display . '&txtsearch=' . $search; ?>" title="<?php _e('Go to the previous page', 'user-activity-log'); ?>">&lsaquo;</a>
                                     <?php } ?>
                                     <span class="paging-input">
-                                        <span class="current-page" title="Current page"><?php echo $paged; ?></span>
+                                        <span class="current-page" title="<?php _e('Current page', 'user-activity-log'); ?>"><?php echo $paged; ?></span>
                                         <span class="total-pages"><?php echo $total_pages; ?></span>
                                     </span>
-                                    <a class="next-page <?php if ($paged == $total_pages) echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=general_settings_menu').'&paged=' . $next_page . '&display=' . $display . '&txtsearch=' . $search; ?>" title="Go to the next page">&rsaquo;</a>
-                                    <a class="last-page <?php if ($paged == $total_pages) echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=general_settings_menu').'&paged=' . $total_pages . '&display=' . $display . '&txtsearch=' . $search; ?>" title="Go to the last page">&raquo;</a>
+                                    <a class="next-page <?php if ($paged == $total_pages) echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=general_settings_menu').'&paged=' . $next_page . '&display=' . $display . '&txtsearch=' . $search; ?>" title="<?php _e('Go to the next page', 'user-activity-log'); ?>">&rsaquo;</a>
+                                    <a class="last-page <?php if ($paged == $total_pages) echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=general_settings_menu').'&paged=' . $total_pages . '&display=' . $display . '&txtsearch=' . $search; ?>" title="<?php _e('Go to the last page', 'user-activity-log'); ?>">&raquo;</a>
                                 </span>
                             </div>
                         </div>
@@ -619,16 +619,24 @@ if (!function_exists('ual_general_settings')) {
                 if ($wpdb->get_var("SHOW TABLES LIKE '$table_nm'")) {
                     $wpdb->query('TRUNCATE ' . $table_nm);
                     $class = 'updated';
-                    $message = 'All activities from the database has been deleted successfully.';
+                    $message = __("All activities from the database has been deleted successfully.", 'user-activity-log');
                     admin_notice_message($class, $message);
                 }
             }
         }
         $log_day = "30";
+        $ualAllowIp = "";
         if (isset($_POST['submit_display'])) {
             $time_ago = trim($_POST['logdel']);
+            if(isset($_POST['ualAllowIp'])) {
+                update_option('ualpAllowIp', '1');
+            } else {
+                update_option('ualpAllowIp', '0');  
+            }
             if (!empty($time_ago)) {
                 update_option('ualpKeepLogsDay', $time_ago);
+            }
+            if(!empty($time_ago) || isset($_POST['ualAllowIp'])) {
                 $action = "Settings updated";
                 $post_title = "General Settings updated";
                 $class = 'updated';
@@ -639,6 +647,7 @@ if (!function_exists('ual_general_settings')) {
             }
         }
         $log_day = get_option('ualpKeepLogsDay');
+        $ualAllowIp = get_option('ualpAllowIp');
         ?>
         <div class="wrap">
             <?php if (isset($_SESSION['success_msg'])) { ?>
@@ -653,6 +662,12 @@ if (!function_exists('ual_general_settings')) {
                     <h3 class="sol-header-text"><?php _e('Display Option', 'user-activity-log'); ?></h3>
                     <p class="margin_bottom_30"><?php _e('There are some basic options for display User Action Log', 'user-activity-log'); ?></p>
                     <table class="sol-email-table">
+                        <tr>
+                            <th><?php esc_html_e('Enable Ip Address For Log', 'user-activity-log'); ?></th>
+                            <td>
+                                <input id="ualAllowIp" type="checkbox" value="1" <?php checked('1',$ualAllowIp); ?> name="ualAllowIp">&nbsp;<label for="ualAllowIp"><?php esc_html_e('Allow Ip Address of users to log.', 'user-activity-log'); ?></label>
+                            </td>
+                        </tr>
                         <tr>
                             <th><?php _e('Keep logs for', 'user-activity-log'); ?></th>
                             <td>

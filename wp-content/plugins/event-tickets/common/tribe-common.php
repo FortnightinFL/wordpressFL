@@ -1,7 +1,7 @@
 <?php
 /*
 Description: An event settings framework for managing shared options
-Version: 4.9.3.2
+Version: 4.9.6.2
 Author: Modern Tribe, Inc.
 Author URI: http://m.tri.be/1x
 Text Domain: tribe-common

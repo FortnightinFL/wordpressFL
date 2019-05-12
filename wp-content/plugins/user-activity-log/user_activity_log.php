@@ -5,11 +5,14 @@
  * Description: Log the activity of users and roles to monitor your site with actions
  * Author: Solwin Infotech
  * Author URI: https://www.solwininfotech.com/
- * Version: 1.3.9
+ * Version: 1.4.1
  * Requires at least: 4.0
  * Tested up to: 5.1.1
  * Copyright: Solwin Infotech
  * License: GPLv2 or later
+ * 
+ * Text Domain: user-activity-log
+ * Domain Path: /languages/
  */
 
 /*
@@ -24,6 +27,10 @@ if (!defined('ABSPATH')) {
  */
 define('UAL_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('UAL_PLUGIN_URL', plugin_dir_url(__FILE__));
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+if(!function_exists('is_plugin_active')) {
+    require_once( ABSPATH . WPINC . '/pluggable.php' );
+}
 include(UAL_PLUGIN_DIR . 'user_functions.php');
 include(UAL_PLUGIN_DIR . 'user_settings_menu.php');
 require_once UAL_PLUGIN_DIR . 'promo_notice.php';
@@ -162,7 +169,24 @@ if (!function_exists('ual_remove_footer_admin')) {
     }
 
 }
-
+if (is_plugin_active('gravityforms/gravityforms.php')) {
+    include(UAL_PLUGIN_DIR . 'includes/ual-gravityform.php');
+}
+if (is_plugin_active('easy-digital-downloads/easy-digital-downloads.php')) {
+    include(UAL_PLUGIN_DIR . 'includes/ual-easy-digital-download.php');
+}
+if (is_plugin_active('user-switching/user-switching.php')) {
+    include(UAL_PLUGIN_DIR . 'includes/ual-user-switching.php');
+}
+if (is_plugin_active('woocommerce/woocommerce.php')) {
+    include(UAL_PLUGIN_DIR . 'includes/ual-woocommerce.php');
+}
+if (is_plugin_active('wordpress-seo/wp-seo.php')) {
+    include(UAL_PLUGIN_DIR . 'includes/ual-wordpress-seo.php');
+}
+if (is_plugin_active('buddypress/bp-loader.php')) {
+    include(UAL_PLUGIN_DIR . 'includes/ual-bubbypress.php');
+}
 /**
  * function for set the value in header
  */
@@ -605,15 +629,15 @@ if (!function_exists('ual_user_activity_function')):
                                     <span class="tablenav-pages-navspan" aria-hidden="true">&lsaquo;</span>
                                 <?php } else {
                                     ?>
-                                    <a class="first-page <?php if ($paged == '1') echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=1&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="Go to the first page">&laquo;</a>
-                                    <a class="prev-page <?php if ($paged == '1') echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=' . $prev_page . '&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="Go to the previous page">&lsaquo;</a>
+                                    <a class="first-page <?php if ($paged == '1') echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=1&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="<?php _e('Go to the first page', 'user-activity-log'); ?>">&laquo;</a>
+                                    <a class="prev-page <?php if ($paged == '1') echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=' . $prev_page . '&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="<?php _e('Go to the previous page', 'user-activity-log'); ?>">&lsaquo;</a>
                                 <?php } ?>
                                 <span class="paging-input">
-                                    <input class="current-page" type="text" size="1" value="<?php echo $paged; ?>" name="paged" title="Current page"> of
+                                    <input class="current-page" type="text" size="1" value="<?php echo $paged; ?>" name="paged" title="<?php _e('Current page', 'user-activity-log'); ?>"> <?php _e('of', 'user-activity-log'); ?>
                                     <span class="total-pages"><?php echo $total_pages; ?></span>
                                 </span>
-                                <a class="next-page <?php if ($paged == $total_pages) echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=' . $next_page . '&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="Go to the next page">&rsaquo;</a>
-                                <a class="last-page <?php if ($paged == $total_pages) echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=' . $total_pages . '&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="Go to the last page">&raquo;</a>
+                                <a class="next-page <?php if ($paged == $total_pages) echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=' . $next_page . '&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="<?php _e('Go to the next page', 'user-activity-log'); ?>">&rsaquo;</a>
+                                <a class="last-page <?php if ($paged == $total_pages) echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=' . $total_pages . '&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="<?php _e('Go to the last page', 'user-activity-log'); ?>">&raquo;</a>
                             </span>
                         </div>
                     </div>
@@ -719,15 +743,15 @@ if (!function_exists('ual_user_activity_function')):
                                     <span class="tablenav-pages-navspan" aria-hidden="true">&lsaquo;</span>
                                 <?php } else {
                                     ?>
-                                    <a class="first-page <?php if ($paged == '1') echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=1&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="Go to the first page">&laquo;</a>
-                                    <a class="prev-page <?php if ($paged == '1') echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=' . $prev_page . '&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="Go to the previous page">&lsaquo;</a>
+                                    <a class="first-page <?php if ($paged == '1') echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=1&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="<?php _e('Go to the first page', 'user-activity-log'); ?>">&laquo;</a>
+                                    <a class="prev-page <?php if ($paged == '1') echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=' . $prev_page . '&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="<?php _e('Go to the previous page', 'user-activity-log'); ?>">&lsaquo;</a>
                                 <?php } ?>
                                 <span class="paging-input">
                                     <span class="current-page" title="<?php _e('Current page', 'user-activity-log'); ?>"><?php echo $paged; ?></span> <?php _e('of', 'user-activity-log'); ?>
                                     <span class="total-pages"><?php echo $total_pages; ?></span>
                                 </span>
-                                <a class="next-page <?php if ($paged == $total_pages) echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=' . $next_page . '&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="Go to the next page">&rsaquo;</a>
-                                <a class="last-page <?php if ($paged == $total_pages) echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=' . $total_pages . '&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="Go to the last page">&raquo;</a>
+                                <a class="next-page <?php if ($paged == $total_pages) echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=' . $next_page . '&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="<?php _e('Go to the next page', 'user-activity-log'); ?>">&rsaquo;</a>
+                                <a class="last-page <?php if ($paged == $total_pages) echo 'disabled'; ?>" href="<?php echo admin_url('admin.php?page=user_action_log').'&paged=' . $total_pages . '&userrole=' . $us_role . '&username=' . $us_name . '&type=' . $ob_type . '&txtsearch=' . $searchtxt; ?>" title="<?php _e('Go to the last page', 'user-activity-log'); ?>">&raquo;</a>
                             </span>
                         </div>
                     </div>

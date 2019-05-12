@@ -9,9 +9,9 @@
  */
 
 $columns = apply_filters( 'ywpo_my_pre_orders_columns', array(
-    __( 'Product', 'yith-woocommerce-pre-order' ),
-    __( 'Order', 'yith-woocommerce-pre-order' ),
-    __( 'Price', 'yith-woocommerce-pre-order' )
+    __( 'Product', 'yith-pre-order-for-woocommerce' ),
+    __( 'Order', 'yith-pre-order-for-woocommerce' ),
+    __( 'Price', 'yith-pre-order-for-woocommerce' )
 ) );
 
 ?>
@@ -53,7 +53,7 @@ $columns = apply_filters( 'ywpo_my_pre_orders_columns', array(
                             </td>
                             <td>
                                 <a href="<?php echo esc_url( $order->get_view_order_url() ); ?>"><?php
-                                    echo _x( '#', 'hash before order number', 'yith-woocommerce-pre-order' )
+                                    echo _x( '#', 'hash before order number', 'yith-pre-order-for-woocommerce' )
                                          . $order->get_order_number(); ?></a>
                             </td>
                             <td>

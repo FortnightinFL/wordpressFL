@@ -3,12 +3,12 @@
 Plugin Name: YITH Pre-Order for WooCommerce
 Plugin URI: https://yithemes.com/themes/plugins/yith-woocommerce-pre-order
 Description: Thanks to <code><strong>YITH Pre-Order for WooCommerce</strong></code> you can improve right away the sales of unavailable items, offering your customers the chance to purchase the products and receive them only after they are officially on sale. <a href="https://yithemes.com/" target="_blank">Get more plugins for your e-commerce on <strong>YITH</strong></a>.
-Version: 1.1.7
+Version: 1.1.8
 Author: YITH
 Author URI: http://yithemes.com/
 Text Domain: yith-woocommerce-pre-order
 WC requires at least: 3.0.0
-WC tested up to: 3.5.4
+WC tested up to: 3.6.1
 */
 
 /*
@@ -24,9 +24,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /* === DEFINE === */
-! defined( 'YITH_WCPO_VERSION' ) && define( 'YITH_WCPO_VERSION', '1.1.7' );
+! defined( 'YITH_WCPO_VERSION' ) && define( 'YITH_WCPO_VERSION', '1.1.8' );
 ! defined( 'YITH_WCPO_FREE_INIT' ) && define( 'YITH_WCPO_FREE_INIT', plugin_basename( __FILE__ ) );
-! defined( 'YITH_WCPO_SLUG' ) && define( 'YITH_WCPO_SLUG', 'yith-woocommerce-pre-order' );
+! defined( 'YITH_WCPO_SLUG' ) && define( 'YITH_WCPO_SLUG', 'yith-pre-order-for-woocommerce' );
 ! defined( 'YITH_WCPO_FILE' ) && define( 'YITH_WCPO_FILE', __FILE__ );
 ! defined( 'YITH_WCPO_PATH' ) && define( 'YITH_WCPO_PATH', plugin_dir_path( __FILE__ ) );
 ! defined( 'YITH_WCPO_URL' ) && define( 'YITH_WCPO_URL', plugins_url( '/', __FILE__ ) );
@@ -80,7 +80,7 @@ if ( ! function_exists( 'yith_ywpo_init' ) ) {
 		/**
 		 * Load text domain
 		 */
-		load_plugin_textdomain( 'yith-woocommerce-pre-order', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'yith-pre-order-for-woocommerce', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 
 		if ( ! function_exists( 'YITH_Pre_Order' ) ) {

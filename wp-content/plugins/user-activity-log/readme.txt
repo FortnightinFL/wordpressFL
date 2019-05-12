@@ -5,7 +5,7 @@ Tags: admin user log, user log, user, log, user activity, activity log, log user
 Requires at least: 4.0
 Tested up to: 5.1.1
 Requires PHP: 5.6
-Stable tag: 1.3.9
+Stable tag: 1.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,71 +14,95 @@ Log all activity of users and get notified when user login to admin area.
 
 == Description ==
 
-Do your site have many users for various admin side activity? Do you stuck with issue to track user activity on your website admin side? do you want to secure your site by tracking log of all user activity ? do you want to get notified when particular user logged in ?
-Just relax, Now with the help of "User Activity Log" Plugin you can track all users activity on your website.
+Does your site have many users for various admin side activity? Do you stuck with the issue to track user activity on your website admin side? do you want to secure your site by tracking log of all user activity? Do you want to get notified when the particular user logged in?
+Just relax, Now with the help of “User Activity Log” Plugin, you can track all users activity on your website. 
 
+**Live Demo:** [useractivitylog.solwininfotech.com/](http://useractivitylog.solwininfotech.com/)
 
-As of this moment, the plugin logs data when anyone do following activity:
+**Documentation:** [User Activity Log Documentation Link](https://www.solwininfotech.com/documents/wordpress/user-activity-log-lite/)
 
-* WordPress - Core Updates
-* Posts - Created, Updated, Deleted
-* Pages - Created, Updated, Deleted
-* Custom Post Type Posts- Created, Updated, Deleted
-* Tags - Created, Edited, Deleted
-* Categories - Created, Edited, Deleted
-* Taxonomies terms - Created, Edited, Deleted
-* Comments - Created, Approved, Unproved, Trashed, Untrashed, Spammed, Unspammed, Deleted
-* Media - Uploaded, Edited, Deleted
-* Users - Login, Logout, Login has failed, Update profile, Registered and Delete
-* Plugins - Activated, Deactivated
-* Themes - Installed, Updated, Deleted, Activated
-* Widgets - Added to a sidebar / Deleted from a sidebar, Order widgets
-* Menus - A menu is being Created, Updated, Deleted
-* Export - User download export file from the site
-* Plugins supported - bbpress
+As of this moment, the plugin logs data when anyone does the following activity: 
+
+* <strong>WordPress</strong> - Core Updates
+* <strong>Posts</strong> - Created, Updated, Deleted
+* <strong>Pages</strong> - Created, Updated, Deleted
+* <strong>Custom Post Type Posts</strong>- Created, Updated, Deleted
+* <strong>Tags</strong> - Created, Edited, Deleted
+* <strong>Categories</strong> - Created, Edited, Deleted
+* <strong>Taxonomies terms</strong> - Created, Edited, Deleted
+* <strong>Comments</strong> - Created, Approved, Unproved, Trashed, Untrashed, Spammed, Unspammed, Deleted
+* <strong>Media</strong> - Uploaded, Edited, Deleted
+* <strong>Users</strong> - Login, Logout, Login has failed, Update profile, Registered and Delete
+* <strong>Plugins</strong> - Activated, Deactivated
+* <strong>Themes</strong> - Installed, Updated, Deleted, Activated
+* <strong>Widgets</strong> - Added to a sidebar / Deleted from a sidebar, Order widgets
+* <strong>Menus</strong> - A menu is being Created, Updated, Deleted
+* <strong>Setting</strong> - General, Writing, Reading, Discussion, Media, Permalinks
+* <strong>Export</strong> - User download export file from the site
 * Translation Ready - .pot file attached
 
-Additional features for security:
+<strong>Additional features for security:</strong>
 
 * Admin will be notified via email when selected user logged in.
 * Admin will be notified via email when selected role's any user logged in.
 
+<strong>New!</strong> Added support of following plugins.
+BuddyPress, Easy Digital Download, Advance Custom Field, Gravity form, User Switching, WooCommerce, Yoast SEO
+
+<h4>What people are saying</h4>
+* <em>“Ideal for in-depth monitoring, and sites with multiple authors”</em> - [themeisle.com](https://themeisle.com/blog/wordpress-activity-logs-plugins/)
+
+* <em>“User Activity Log is a freemium activity tracking plugin with some nifty features.”</em> - [wplift.com](https://wplift.com/wordpress-event-tracking)
+
+* <em>“Ability to get a notification email when a specific user or user role logs in.”</em> - [elegantthemes.com](https://www.elegantthemes.com/blog/tips-tricks/5-best-ways-to-monitor-wordpress-activity-via-the-dashboard)
+
+* <em>“User Activity Log is a great plugin for monitoring site activities.”</em> -  [wpmyweb.com](https://www.wpmyweb.com/plugins/monitor-user-activity-wordpress.html)
+
+* <em>"If you have a lot of users on the website, you may want to track what has been changed on the website, and by who. Luckily, there is a free plugin which does exactly this, called User Activity Log"</em> -  [bowlerhat.co.uk](https://www.bowlerhat.co.uk/plugins-wordpress-site-needs-avoid-disaster)
+
+* <em>“This plugin tracks a pretty wide range of activities, from category changes and media uploads to menu edits and user exports.”</em> - [wpwhitesecurity.com](https://www.wpwhitesecurity.com/top-5-activity-log-wordpress-plugins/)
+
+* <em>“Plugin to help view what is actually going on behind the scenes of your blog.”</em> - [wpoutcast.com](https://www.wpoutcast.com/top-plugins-for-logging-user-activity/)
+
+
+The plugin does not require any kind of extra setup. It just works well! (and that’s another reason people love it).
+
+We are planning to add more features in the upcoming versions. If you think we’re missing something big, please post your suggestions in the plugin’s forum.
+
 
 ### User Activity Log Pro Features:
-Pro version overcome your limitations with lite version of user activity log.
+Pro version overcomes your limitations with the lite version of the User Activity Log.
 
 > **User Activity Log PRO Plugin Features**
 >
-> * All lite version features with detail logs
-> * Hook Settings - Can modify what will be in track list instead of all logs
-> * Sorting options - To view log data in ascending or descending order
-> * Password security - Only authorized user can delete log
-> * Favorite/Unfavorite log to store log separately
-> * Export Log - Export log anytime in CSV format for future usage
-> * Detail Logs - View log in details to compare old and new changes
-> * Delete Logs - Single & Multi delete log option
-> * Custom Event Log - To add your own theme/plugin hook support
-> * Plugins supported - bbpress, WooCommerce, Contact Form 7 and more coming soon..
-> * Detailed Documentation - From which steps you need to start
+> * All Free version features with detail logs
+> * <strong>Hook Settings</strong> - Can modify what will be in tracklist instead of all logs
+> * <strong>Sorting options</strong> - To view log data in ascending or descending order
+> * <strong>Password security</strong> - Only authorized user can delete log
+> * <strong>Favorite/Unfavorite log</strong> - Favorite/Unfavorite log to store log separately
+> * <strong>Export Log</strong> - Export log anytime in CSV format for future usage
+> * <strong>Detail Logs</strong> - View log in details to compare old and new changes
+> * <strong>Delete Logs</strong> - Single & Multi delete log option
+> * <strong>Custom Event Log</strong> - To add your own theme/plugin hook support
+> * <strong>Plugins supported</strong> - WooCommerce, Easy Digital Downloads, Advance Custom Field, bbPress, Yoast SEO, Gravity form, Wordfence, Contact Form 7, Autoptimize, Users Ultra, User Switching, WC Checkout Fields Editor, All in One Reservation, Portfolio Designer, Blog Designer PRO and more coming soon..
+> * <strong>Detailed Documentation</strong> - From which steps you need to start
 
 
 = For whom User Activity Log Pro is useful ? =
 
 * Most needed for Website Owner
 * Product Manager, Site In-charge or Site Manager, Team Leader, Developers to check team's activity
-* IT companies to track multiple developer's behavior
+* IT companies/agency to track multiple developer’s activity
 * IT Consultants, Freelancers
 
 = Buy User Activity Log Pro on Codecanyon : =
 <a rel="nofollow" href="https://codecanyon.net/item/user-activity-log-pro-for-wordpress/18201203?ref=solwin">https://codecanyon.net/item/user-activity-log-pro-for-wordpress/18201203?ref=solwin</a>
 
-**Documentation:** [User Activity Log Documentation Link](https://www.solwininfotech.com/documents/wordpress/user-activity-log-lite/)
+= Technical Support =
+We're active for any support issues and feature suggestions. So hope you will love it. Please contact us at [support forum](https://wordpress.org/support/plugin/user-activity-log) or [support.solwininfotech.com](http://support.solwininfotech.com)
 
 = Note =
-The purpose of this plugin is to keep track of all activity with in your WordPress area. We have performed testing with various cases to make sure plugins works very well, but you should make sure you have a backup of your database, before installing plugin.
-
-= Support =
-If you find any issue please ask questions on support forum and we will try to solve issue. We're active for any support issues. So hope you will love it.
+The purpose of this plugin is to keep track of all activity within your WordPress area. We have performed testing with various cases to make sure plugins work very well, but you should make sure you have a backup of your database, before installing the plugin.
 
 == Installation ==
 1. Download the plugin file and unzip it.
@@ -113,6 +137,21 @@ Monitor and track all backend activities those are done by your freelancers, web
 
 
 == Changelog ==
+
+= 1.4.1 =
+Release date: April 26th, 2019
+* Fixed: Minor issues
+
+= 1.4 =
+Release date: April 23rd, 2019
+* Added: Plugin support - Advance Custom Field (ACF)
+* Added: Plugin support - BuddyPress
+* Added: Plugin support - Easy Digital Download
+* Added: Plugin support - Gravity form
+* Added: Plugin support - User Switching
+* Added: Plugin support - WooCommerce
+* Added: Plugin support - Yoast SEO
+* Fixed: Minor issues
 
 = 1.3.9 =
 Release date: March 22th, 2019

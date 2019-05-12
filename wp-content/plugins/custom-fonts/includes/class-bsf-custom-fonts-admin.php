@@ -40,7 +40,7 @@ if ( ! class_exists( 'Bsf_Custom_Fonts_Admin' ) ) :
 		 */
 		public static function get_instance() {
 			if ( ! isset( self::$_instance ) ) {
-				self::$_instance = new self;
+				self::$_instance = new self();
 			}
 
 			return self::$_instance;
@@ -64,7 +64,7 @@ if ( ! class_exists( 'Bsf_Custom_Fonts_Admin' ) ) :
 			add_action( 'create_' . Bsf_Custom_Fonts_Taxonomy::$register_taxonomy_slug, array( $this, 'save_metadata' ) );
 
 			add_filter( 'upload_mimes', array( $this, 'add_fonts_to_allowed_mimes' ) );
-
+			add_filter( 'wp_check_filetype_and_ext', array( $this, 'update_mime_types' ), 10, 3 );
 		}
 
 		/**
@@ -141,6 +141,7 @@ if ( ! class_exists( 'Bsf_Custom_Fonts_Admin' ) ) :
 			$this->font_file_new_field( 'font_ttf', __( 'Font .ttf', 'custom-fonts' ), __( 'Upload the font\'s ttf file or enter the URL.', 'custom-fonts' ) );
 			$this->font_file_new_field( 'font_eot', __( 'Font .eot', 'custom-fonts' ), __( 'Upload the font\'s eot file or enter the URL.', 'custom-fonts' ) );
 			$this->font_file_new_field( 'font_svg', __( 'Font .svg', 'custom-fonts' ), __( 'Upload the font\'s svg file or enter the URL.', 'custom-fonts' ) );
+			$this->font_file_new_field( 'font_otf', __( 'Font .otf', 'custom-fonts' ), __( 'Upload the font\'s otf file or enter the URL.', 'custom-fonts' ) );
 		}
 
 		/**
@@ -156,6 +157,7 @@ if ( ! class_exists( 'Bsf_Custom_Fonts_Admin' ) ) :
 			$this->font_file_edit_field( 'font_ttf', __( 'Font .ttf', 'custom-fonts' ), $data['font_ttf'], __( 'Upload the font\'s ttf file or enter the URL.', 'custom-fonts' ) );
 			$this->font_file_edit_field( 'font_eot', __( 'Font .eot', 'custom-fonts' ), $data['font_eot'], __( 'Upload the font\'s eot file or enter the URL.', 'custom-fonts' ) );
 			$this->font_file_edit_field( 'font_svg', __( 'Font .svg', 'custom-fonts' ), $data['font_svg'], __( 'Upload the font\'s svg file or enter the URL.', 'custom-fonts' ) );
+			$this->font_file_edit_field( 'font_otf', __( 'Font .otf', 'custom-fonts' ), $data['font_otf'], __( 'Upload the font\'s otf file or enter the URL.', 'custom-fonts' ) );
 		}
 
 		/**
@@ -232,7 +234,33 @@ if ( ! class_exists( 'Bsf_Custom_Fonts_Admin' ) ) :
 			$mimes['ttf']   = 'application/x-font-ttf';
 			$mimes['svg']   = 'image/svg+xml';
 			$mimes['eot']   = 'application/vnd.ms-fontobject';
+			$mimes['otf']   = 'font/otf';
+
 			return $mimes;
+		}
+
+		/**
+		 * Correct the mome types and extension for the font types.
+		 *
+		 * @param array  $defaults File data array containing 'ext', 'type', and
+		 *                                          'proper_filename' keys.
+		 * @param string $file                      Full path to the file.
+		 * @param string $filename                  The name of the file (may differ from $file due to
+		 *                                          $file being in a tmp directory).
+		 * @return Array File data array containing 'ext', 'type', and
+		 */
+		public function update_mime_types( $defaults, $file, $filename ) {
+			if ( 'ttf' === pathinfo( $filename, PATHINFO_EXTENSION ) ) {
+				$defaults['type'] = 'application/x-font-ttf';
+				$defaults['ext']  = 'ttf';
+			}
+
+			if ( 'otf' === pathinfo( $filename, PATHINFO_EXTENSION ) ) {
+				$defaults['type'] = 'application/x-font-otf';
+				$defaults['ext']  = 'otf';
+			}
+
+			return $defaults;
 		}
 
 	}

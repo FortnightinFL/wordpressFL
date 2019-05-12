@@ -3,8 +3,8 @@
 Contributors: yithemes
 Tags: pre order, pre-order, preorder, pre-arrange, woocommerce, for woocommerce, e-commerce, shop, yith, yithemes
 Requires at least: 4.0
-Tested up to: 5.0.3
-Stable tag: 1.1.7
+Tested up to: 5.1.1
+Stable tag: 1.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,6 +105,12 @@ No, you can choose which variations setting as Pre-Order separately.
 
 
 == Changelog ==
+
+= Version 1.1.8 - Released: Apr 23, 2019 =
+
+* New: Support to WooCommerce 3.6.0
+* Update: Language file.
+* Update: Plugin core.
 
 = Version 1.1.7 - Released: Feb 19, 2019 =
 

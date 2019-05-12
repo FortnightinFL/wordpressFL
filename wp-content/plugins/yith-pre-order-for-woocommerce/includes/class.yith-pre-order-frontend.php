@@ -73,7 +73,7 @@ if ( ! class_exists( 'YITH_Pre_Order_Frontend' ) ) {
 				} else if ( ! empty( $plugin_options_label ) ) {
 					return $plugin_options_label;
 				} else {
-					return __( 'Pre-Order Now', 'yith-woocommerce-pre-order' );
+					return __( 'Pre-Order Now', 'yith-pre-order-for-woocommerce' );
 				}
 			}
 
@@ -101,7 +101,7 @@ if ( ! class_exists( 'YITH_Pre_Order_Frontend' ) ) {
 				return;
 			}
 
-			echo '<div style="font-size: 11px;">' . __( 'Pre-Order product', 'yith-woocommerce-pre-order' ) . '</div>';
+			echo '<div style="font-size: 11px;">' . __( 'Pre-Order product', 'yith-pre-order-for-woocommerce' ) . '</div>';
 		}
 
 		//*********** Compatibility for The Polygon theme ***********//
@@ -130,7 +130,7 @@ if ( ! class_exists( 'YITH_Pre_Order_Frontend' ) ) {
 			} else if ( ! empty( $default_pre_order_label ) ) {
 				$pre_order_label = $default_pre_order_label;
 			} else {
-				$pre_order_label = __( 'Pre-Order Now!', 'yith-woocommerce-pre-order' );
+				$pre_order_label = __( 'Pre-Order Now!', 'yith-pre-order-for-woocommerce' );
 			}
 
 
@@ -156,7 +156,7 @@ if ( ! class_exists( 'YITH_Pre_Order_Frontend' ) ) {
 
 				if ( 'yes' == $pre_order->get_pre_order_status() ) {
 					yit_save_prop( $order, '_order_has_preorder', 'yes' );
-					$order->add_order_note( sprintf( __( 'Item %s was Pre-Ordered', 'yith-woocommerce-pre-order' ), $pre_order->product->get_formatted_name() ) );
+					$order->add_order_note( sprintf( __( 'Item %s was Pre-Ordered', 'yith-pre-order-for-woocommerce' ), $pre_order->product->get_formatted_name() ) );
 				}
 			}
 		}
